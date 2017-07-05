@@ -119,3 +119,17 @@ p.about-me {
   padding: 5px;
   background-color: #e9e9e9;
 }
+
+
+div.skills {
+  background-color: #e9e9e9;
+  box-shadow: 10px 10px 10px #129;
+}
+
+.skill-icon {
+  float: left;
+  width: 20%;
+  margin: 2.5%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222); 
+}
