@@ -59,12 +59,31 @@ h1.logo {
 }
 
 /*MEDIA QUERIEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
-html {
-  background-color: black;
-}
+/*COLORS
+#CDCDCD darker white
+#88BBD6 dark blue
+#e9e9e9 lighter white
+#99d3df lighter blue
+*/
+#back-column {
+  height: 100%;
+  width: 76%;
+  margin: 0 auto;
+  background-color: #36c;
+  position: fixed;
+  z-index: -1;
+  overflow: hidden;
+  left: 12%;
 
+}
+html {
+}
+body { 
+  background: #003 !important;
+  margin: 0 auto;
+}
 .header {
-  background-color: aliceblue;
+  background-color: #039;
 }
 h1.logo {
   font-family: sans-serif;
@@ -72,10 +91,31 @@ h1.logo {
   margin-top: 10px;
   padding-top: 3px;
   padding-right: 0px;
-  color: black;
+  color: #fbfbfb;
+}
+
+nav {
+  margin-top: 1.5%;
 }
 
 a {
   margin-top: 20px;
   font-size: 1rem;
+  color: #e9e9e9;
+  padding: 0px 0px;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+h2.section-title {
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0;
+  text-decoration: underline;
+  color: #e9e9e9;
+  padding-left: 30px
+}
+
+p.about-me {
+  padding: 5px;
+  background-color: #e9e9e9;
 }
