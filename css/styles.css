@@ -1,0 +1,81 @@
+@media only screen and (min-width : 320px) {
+  h1 {
+    color: orange;
+  }
+  h1.logo {
+    font-size: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  h1 {
+    color:aquamarine;
+  }
+  h1.logo {
+    font-size: 27px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+h1 {
+  color: red;
+}
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+h1 {
+  color: pink;
+  font-size: 24px;
+}
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+h1.logo {
+  color: black;
+  font-size: 2.29rem;
+}
+  html {
+    font-size: 16px;
+  }
+}
+
+.red {
+  background-color: red;
+  text-align: center;
+}
+.blue {
+    background-color: blue;
+  text-align: center;
+}
+
+/*MEDIA QUERIEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+html {
+  background-color: black;
+}
+
+.header {
+  background-color: aliceblue;
+}
+h1.logo {
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-top: 3px;
+  padding-right: 0px;
+  color: black;
+}
+
+a {
+  margin-top: 20px;
+  font-size: 1rem;
+}
