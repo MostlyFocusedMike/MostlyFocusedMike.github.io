@@ -2,8 +2,8 @@
   h1 {
     color: orange;
   }
-  h1.logo {
-    font-size: 20px;
+  html {
+    font-size: 10px;
   }
 }
 
@@ -12,8 +12,8 @@
   h1 {
     color:aquamarine;
   }
-  h1.logo {
-    font-size: 27px;
+  html {
+    font-size: 10px;
   }
 }
 
@@ -23,7 +23,7 @@ h1 {
   color: red;
 }
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
@@ -31,10 +31,9 @@ h1 {
 @media only screen and (min-width : 992px) {
 h1 {
   color: pink;
-  font-size: 24px;
 }
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -74,13 +73,9 @@ h1.logo {
   z-index: -1;
   overflow: hidden;
   left: 15%;
-
-}
-html {
 }
 body { 
   background: #003 !important;
-  margin: 0 auto;
 }
 .header {
   background-color: #039;
@@ -88,10 +83,11 @@ body {
 h1.logo {
   font-family: sans-serif;
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: .9rem;
   padding-top: 3px;
   padding-right: 0px;
   color: #fbfbfb;
+  font-size: 2rem;
 }
 
 nav {
@@ -140,8 +136,8 @@ p {
 }
 .skill-icon {
   float: left;
-  width: 80px;
-  height: 110px;
+  width: 5rem;
+  height: 7rem;
   margin: 10px;
   display: inline-block;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
