@@ -14,16 +14,19 @@
   z-index: -1;
   overflow: hidden;
   left: 5%;
-}
+  }
   h2.section-title {
-  font-size: 1.5rem;
-  font-style: italic;
+  font-size: 1.5 rem;
   padding: 0;
-  border-bottom: .1em solid white;
+  text-decoration: underline;
+  text-transform:uppercase;
   color: white;
   padding-left: .5rem;
   margin-bottom: 1rem;
-}
+  }
+  .line {
+    width: 17rem;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -83,7 +86,7 @@ h1 {
   color: white;
   padding-left: 2.1rem;
   margin-bottom: 1rem;
-}
+  }
 }
 
 .red {
