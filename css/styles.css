@@ -25,7 +25,10 @@
   margin-bottom: 1rem;
   }
   .line {
-    width: 17rem;
+  width: 10rem;
+  margin: 2rem auto;
+  border-bottom: .25rem solid white;
+  box-shadow: .5rem .5rem .5rem #129;
   }
 }
 
@@ -43,6 +46,12 @@
   }
    p {
     font-size: 5rem;
+  }
+  h2.section-title {
+  font-size: 1.5rem;
+  }
+  .line {
+  width: 20rem;
   }
 }
 
@@ -78,15 +87,7 @@ h1 {
   html {
     font-size: 16px;
   }
-  h2.section-title {
-  font-size: 1.5rem;
-  font-style: italic;
-  padding: 0;
-  border-bottom: .1em solid white;
-  color: white;
-  padding-left: 2.1rem;
-  margin-bottom: 1rem;
-  }
+
 }
 
 .red {
@@ -167,13 +168,6 @@ a:hover {
   margin: .8rem;
   text-align: left;
   font-size: 1rem;
-}
-
-.line {
-  width: 20rem;
-  margin: 2rem auto;
-  border-bottom: .25rem solid white;
-  box-shadow: .5rem .5rem .5rem #129;
 }
 
 div.skills {
