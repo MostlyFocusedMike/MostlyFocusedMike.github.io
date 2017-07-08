@@ -4,6 +4,8 @@
   }
   html {
     font-size: 16px;
+    font-family: monospace, sans-serif;
+
   }
   #back-column {
   height: 100%;
@@ -106,11 +108,12 @@ h1 {
 #e9e9e9 lighter white
 #99d3df lighter blue
 */
-
 body { 
   background: #003 !important; /* that !important overrides the bootstrap setting*/
 }
-
+h2, h3, p, a {
+  font-family: "oswald"
+}
 p{
   margin: 1rem;
   font-size: 1rem;
@@ -123,13 +126,13 @@ span {
   background-color: #039;
   width: 100%;
   height: 4.2rem;
-  position: fixed;
+  position: absolute;
 }
 .header {
   background-color: #039;
 }
 h1.logo {
-  font-family: sans-serif;
+  font-family: "Oswald";
   font-weight: 500;
   margin-top: .9rem;
   padding-right: 0;
@@ -218,6 +221,7 @@ h3 {
 }
 
 img.phone-icon {
+  margin-top: .45rem;
   width: 10rem;
   height: 14rem;
   float: left;
