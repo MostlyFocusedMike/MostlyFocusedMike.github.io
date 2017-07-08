@@ -119,7 +119,12 @@ p{
 span {
   margin-left: 2em;
 }
-
+#header-fix {
+  background-color: #039;
+  width: 100%;
+  height: 4.2rem;
+  position: fixed;
+}
 .header {
   background-color: #039;
 }
