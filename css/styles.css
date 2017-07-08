@@ -112,10 +112,12 @@ body {
   background: #003 !important; /* that !important overrides the bootstrap setting*/
 }
 h2, h3, p, a {
-  font-family: "oswald"
+  font-family: "oswald";
 }
 p{
-  margin: 1rem;
+  margin: 1rem auto;
+  text-align: justify;
+  text-justify: inter-word;
   font-size: 1rem;
 }
 
@@ -172,20 +174,18 @@ a:hover {
   text-align: center;
 }
 .about-me p {
-  display: block;
   margin: .8rem;
-  text-align: left;
   font-size: 1rem;
 }
 
-div.skills {
+.skills {
   background-color: #e9e9e9;
   box-shadow: .8rem .8rem .8rem #129;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 1.4rem;
   margin-bottom: 1.4rem;
+  padding: .8rem 2rem;
 }
 div.icons {
   display: flex;
@@ -209,9 +209,10 @@ div.icons {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.4rem;
+
 }
 .project-showcase {
-  padding-bottom: 1.4rem;
+  margin-bottom: 0;
   width: 24rem;
 }
 h3 {
@@ -221,29 +222,22 @@ h3 {
 }
 
 img.phone-icon {
-  margin-top: .45rem;
+  margin: 1rem 0;
   width: 10rem;
   height: 14rem;
-  float: left;
+  display: inline-block;
   -webkit-filter: drop-shadow(.5rem .5rem .5rem #667);
   filter: drop-shadow(.5rem .5rem .5rem #667); 
 }
 
 .project-info {
-  float: left;
-  margin-left: 1.4rem;
-}
-.project-title {
+  display: inline-block;
+  margin: 0rem .8rem; .5rem .8rem;
 }
 .buttons {
   font-size: 1rem;
   margin-bottom: .8rem;
 }
-.project-showcase p {
-  float: left;
-  width: 85%;
-}
-
 button a {
   text-decoration: none;
   border: none;
