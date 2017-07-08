@@ -5,7 +5,6 @@
   html {
     font-size: 16px;
     font-family: monospace, sans-serif;
-
   }
   #back-column {
   height: 100%;
@@ -32,6 +31,14 @@
   border-bottom: .25rem solid white;
   box-shadow: .5rem .5rem .5rem #129;
   }
+  h1.logo {
+  font-family: "Oswald";
+  font-weight: 500;
+  margin-top: .9rem;
+  padding-right: 0;
+  color: #fbfbfb;
+  font-size: 2rem;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -55,6 +62,7 @@
   .line {
   width: 20rem;
   }
+  
 }
 
 /* Small Devices, Tablets */
@@ -63,11 +71,14 @@ h1 {
   color: red;
 }
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
   #back-column {
   width: 70%;
   left: 15%;
+  }
+  h1.logo {
+  padding-left: 0;
   }
 }
 
@@ -133,14 +144,7 @@ span {
 .header {
   background-color: #039;
 }
-h1.logo {
-  font-family: "Oswald";
-  font-weight: 500;
-  margin-top: .9rem;
-  padding-right: 0;
-  color: #fbfbfb;
-  font-size: 2rem;
-}
+
 
 nav {
   margin-top: 1.4rem;
