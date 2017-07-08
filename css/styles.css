@@ -10,7 +10,7 @@
   height: 100%;
   width: 90%;
   margin: 0 auto;
-  background-color: #36c;
+  background-color: #E5E5E5;
   position: fixed;
   z-index: -1;
   overflow: hidden;
@@ -21,15 +21,15 @@
   padding: 0;
   text-decoration: underline;
   text-transform:uppercase;
-  color: white;
+  color: #0C5179;
   padding-left: .5rem;
   margin-bottom: 1rem;
   }
   .line {
   width: 10rem;
-  margin: 2rem auto;
-  border-bottom: .25rem solid white;
-  box-shadow: .5rem .5rem .5rem #129;
+  margin: 1rem auto;
+  border-bottom: .25rem solid #D9B310;
+/*  box-shadow: .5rem .5rem .5rem #004178;*/
   }
   h1.logo {
   font-family: "Oswald";
@@ -38,6 +38,21 @@
   padding-right: 0;
   color: #fbfbfb;
   font-size: 2rem;
+  }
+  .skill-icon {
+  float: left;
+  width: 4rem;
+  height: 6rem;
+  margin: .5rem;
+  display: inline-block;
+  }
+  img.phone-icon {
+    margin: .1rem 0rem -2rem;
+    width: 10rem;
+    height: 14rem;
+    display: inline-block;
+    -webkit-filter: drop-shadow(.5rem .5rem .5rem #013058);
+    filter: drop-shadow(.5rem .5rem .5rem ##013058); 
   }
 }
 
@@ -50,19 +65,28 @@
     font-size: 16px;
   }
   #back-column {
-  width: 90%;
-  left: 5%;
+    width: 90%;
+    left: 5%;
   }
-   p {
+  p {
     font-size: 5rem;
   }
   h2.section-title {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
   }
   .line {
-  width: 20rem;
+    width: 20rem;
   }
-  
+  .skill-icon {
+    float: left;
+    width: 6rem;
+    height: 9rem;
+    margin: 1rem;
+    display: inline-block;
+  }
+  img.phone-icon {
+    margin: 1rem 0rem;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -120,7 +144,7 @@ h1 {
 #99d3df lighter blue
 */
 body { 
-  background: #003 !important; /* that !important overrides the bootstrap setting*/
+  background: #1D2731 !important; /* that !important overrides the bootstrap setting*/
 }
 h2, h3, p, a {
   font-family: "oswald";
@@ -140,13 +164,13 @@ p{
   margin-left: 2em;
 }
 #header-fix {
-  background-color: #039;
+  background-color: #0C5179;
   width: 100%;
   height: 4.2rem;
   position: absolute;
 }
 .header {
-  background-color: #039;
+  background-color: #0C5179;
 }
 nav {
   margin-top: 1.4rem;
@@ -175,52 +199,46 @@ a:hover {
 
 .about-me {
   padding: .5rem;
-  background-color: #e9e9e9;
+  background-color: #0C5179;
   margin-bottom: 1.2rem;
-  box-shadow: .8rem .8rem .8rem  #129;
+  box-shadow: .4rem .4rem 1rem  #888;
   text-align: center;
 }
 .about-me p {
   margin: .8rem;
   font-size: 1rem;
+  color: white;
 }
 
 .skills {
-  background-color: #e9e9e9;
-  box-shadow: .8rem .8rem .8rem #129;
+  background-color:  #0C5179;
+  box-shadow: .4rem .4rem 1rem  #888;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.4rem;
   padding: .8rem 2rem;
+  color: white
 }
 div.icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.skill-icon {
-  float: left;
-  width: 5rem;
-  height: 7rem;
-  margin: .8rem;
-  display: inline-block;
-  -webkit-filter: drop-shadow(.5rem .5rem .5rem #667);
-  filter: drop-shadow(.5rem .5rem .5rem #667); 
-}
 .projects {
-  background-color: #e9e9e9;
-  box-shadow: .8rem .8rem .8rem #129;
+  background-color:  #0C5179;
+  box-shadow: .4rem .4rem 1rem  #888;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.4rem;
-
+  color: white;
+  padding: -1.5rem 1rem;
 }
 .project-showcase {
   margin-bottom: 0;
   width: 24rem;
+  padding: 1rem 0rem;
 }
 h3 {
   font-size: 1.5rem;
@@ -228,14 +246,6 @@ h3 {
   display: inline-block;
 }
 
-img.phone-icon {
-  margin: 1rem 0;
-  width: 10rem;
-  height: 14rem;
-  display: inline-block;
-  -webkit-filter: drop-shadow(.5rem .5rem .5rem #667);
-  filter: drop-shadow(.5rem .5rem .5rem #667); 
-}
 
 .project-info {
   display: inline-block;
@@ -244,6 +254,7 @@ img.phone-icon {
 .buttons {
   font-size: 1rem;
   margin-bottom: .8rem;
+  display: inline-block
 }
 button a {
   text-decoration: none;
