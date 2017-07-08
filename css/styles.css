@@ -131,8 +131,12 @@ p{
   text-justify: inter-word;
   font-size: 1rem;
 }
+.glyphicon {
+  margin: 0;
+  padding: 0;
+}
 
-span {
+.tab {
   margin-left: 2em;
 }
 #header-fix {
@@ -144,17 +148,16 @@ span {
 .header {
   background-color: #039;
 }
-
-
 nav {
   margin-top: 1.4rem;
 }
 
-a {
+nav a {
   font-size: 1rem;
   color: #e9e9e9;
-  padding: .1rem .4rem;
   border-bottom: .2rem solid #e9e9e9;
+  padding: .1rem .4rem;
+  margin: 0 .1rem;
 }
 
 a:active {
