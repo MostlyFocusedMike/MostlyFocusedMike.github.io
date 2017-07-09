@@ -10,7 +10,7 @@
   height: 100%;
   width: 90%;
   margin: 0 auto;
-  background-color: #E5E5E5;
+  background-color: #DBDBDB;
   position: fixed;
   z-index: -1;
   left: 5%;
@@ -18,16 +18,16 @@
   h2.section-title {
   font-size: 1.5 rem;
   padding: 0;
-  text-decoration: underline;
   text-transform:uppercase;
   color: #0C5179;
   padding-left: .5rem;
   margin-bottom: 1rem;
+  text-shadow: .4rem .4rem .6rem  #99999f;
   }
   .line {
   width: 10rem;
   margin: 1rem auto;
-  border-bottom: .25rem solid #D9B310;
+  border-bottom: .05rem solid #D9B310;
 /*  box-shadow: .5rem .5rem .5rem #004178;*/
   }
   h1.logo {
@@ -46,11 +46,11 @@
   }
   img.phone-icon {
     margin: .1rem 0rem -2rem;
-    width: 10rem;
-    height: 14rem;
+    width: 11rem;
+    height: 15rem;
     display: inline-block;
-    -webkit-filter: drop-shadow(.5rem .5rem .5rem #013058);
-    filter: drop-shadow(.5rem .5rem .5rem ##013058); 
+    -webkit-filter: drop-shadow(.5rem .5rem .5rem #222);
+    filter: drop-shadow(.5rem .5rem .5rem #222); 
   }
   nav a:link {
     font-size: 1.2rem;
@@ -76,25 +76,25 @@
     text-decoration: none;
   }
   .buttons a {
-    background-color: #0C5179;
-    color: white;
-    border: .2rem solid white;
+    background-color: white;
+    color: #0C5179;
+    border: .2rem solid #0C5179;
     padding: .1rem .4rem;
     text-decoration: none;
   }
   .buttons a:visited {
-    color: white;
-    border: .2rem solid white;
+    color: #0C5179;
+    border: .2rem solid #0C5179;
     text-decoration: none;
   }
   .buttons a:hover {
-    border: .2rem solid white;
-    color: white;
+    border: .2rem solid #B82601;
+    color: #B82601;
     text-decoration: none;
   }
   .buttons a:active {
-    border: .2rem solid lightsalmon;
-    color: lightsalmon;
+    border: .2rem solid #B82601;
+    color: #B82601;
     text-decoration: none;
   }
 }
@@ -115,10 +115,10 @@
     font-size: 5rem;
   }
   h2.section-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .line {
-    width: 20rem;
+    width: 10rem;
   }
   .skill-icon {
     float: left;
@@ -148,12 +148,12 @@ h1 {
   padding-left: 0;
   }
   nav a:hover {
-    color: salmon;
-    border-bottom: .2rem solid salmon;
+    color: #B82601;
+    border-bottom: .2rem solid #B82601;
   }
   .buttons a:hover {
-    border: .2rem solid salmon;
-    color: salmon;
+    border: .2rem solid #B82601;
+    color: #B82601;
   }
 }
 
@@ -203,7 +203,7 @@ html, body {
 }
 
 body { 
-  background: #1D2731 !important; /* that !important overrides the bootstrap setting*/
+  background: #001631 !important; /* that !important overrides the bootstrap setting*/
 }
 h2, h3, p, a {
   font-family: "Oswald", sans-serif;
@@ -215,7 +215,7 @@ p {
   font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: .03rem;
-  color: white;
+  color: black;
 }
 .glyphicon {
   margin: 0;
@@ -233,7 +233,7 @@ p {
   margin-top: 4rem;
 }
 .header {
-  background-color: #0C5179;
+  background-color: #1D1D1D;
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -244,7 +244,7 @@ nav {
 }
 .about-me {
   padding: .5rem;
-  background-color: #0C5179;
+  background-color: white;
   margin-bottom: 1.2rem;
   box-shadow: .4rem .4rem 1rem  #888;
   text-align: center;
@@ -254,14 +254,13 @@ nav {
 }
 
 .skills {
-  background-color:  #0C5179;
+  background-color:  white;
   box-shadow: .4rem .4rem 1rem  #888;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.4rem;
   padding: .8rem 2rem;
-  color: white
 }
 div.icons {
   display: flex;
@@ -269,7 +268,7 @@ div.icons {
   justify-content: center;
 }
 .projects {
-  background-color:  #0C5179;
+  background-color:  white;
   box-shadow: .4rem .4rem 1rem  #888;
   display: flex;
   flex-wrap: wrap;
@@ -286,7 +285,7 @@ h3 {
   font-size: 1.5rem;
   margin-right: .9rem;
   display: inline-block;
-  color: white;
+  color: black;
 }
 .project-info {
   display: inline-block;
