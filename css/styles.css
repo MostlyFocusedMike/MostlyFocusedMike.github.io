@@ -143,6 +143,27 @@ h1 {
 #e9e9e9 lighter white
 #99d3df lighter blue
 */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
 body { 
   background: #1D2731 !important; /* that !important overrides the bootstrap setting*/
 }
@@ -176,27 +197,34 @@ nav {
   margin-top: 1.4rem;
 }
 
-nav a {
+nav a:link {
   font-size: 1rem;
-  color: #e9e9e9;
-  border-bottom: .2rem solid #e9e9e9;
+  color: white;
+  border-bottom: .2rem solid white;
   padding: .1rem .4rem;
   margin: 0 .1rem;
-}
-
-a:active {
-  color: #667;
-  padding: .1rem .4rem;
-  border-bottom: .2rem solid #667;
   text-decoration: none;
 }
-a:hover {
-  color: #667;
+nav a:visited {
+  font-size: 1rem;
+  color: white;
+  border-bottom: .2rem solid white;
   padding: .1rem .4rem;
-  border-bottom: .2rem solid #667;
+  margin: 0 .1rem;
   text-decoration: none;
 }
-
+nav a:active {
+  color: lightsalmon;
+  padding: .1rem .4rem;
+  border-bottom: .2rem solid lightsalmon;
+  text-decoration: none;
+}
+nav a:hover {
+  color: salmon;
+  padding: .1rem .4rem;
+  border-bottom: .2rem solid salmon;
+  text-decoration: none;
+}
 .about-me {
   padding: .5rem;
   background-color: #0C5179;
@@ -254,24 +282,26 @@ h3 {
 .buttons {
   font-size: 1rem;
   margin-bottom: .8rem;
-  display: inline-block
+  display: inline-block;
 }
-button a {
+.buttons a {
+  background-color: #0C5179;
+  color: white;
+  border: .2rem solid white;
+  padding: .1rem .4rem;
   text-decoration: none;
-  border: none;
-  color: gray;
 }
-button a:hover {
+
+.buttons a:visited {
   text-decoration: none;
-  border: none;
 }
-button a:active {
-  color: bisque;
-  text-decoration: none;
-  border: none;
+
+.buttons a:hover {
+  border: .2rem solid salmon;
+  color: salmon;
 }
-button a:visited {
-  color: gray;
-  text-decoration: none;
-  border: none;
+
+.buttons a:active {
+  border: .2rem solid lightsalmon;
+  color: lightsalmon;
 }
