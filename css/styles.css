@@ -13,7 +13,6 @@
   background-color: #E5E5E5;
   position: fixed;
   z-index: -1;
-  overflow: hidden;
   left: 5%;
   }
   h2.section-title {
@@ -53,6 +52,51 @@
     display: inline-block;
     -webkit-filter: drop-shadow(.5rem .5rem .5rem #013058);
     filter: drop-shadow(.5rem .5rem .5rem ##013058); 
+  }
+  nav a:link {
+    font-size: 1.2rem;
+    color: white;
+    border-bottom: .2rem solid white;
+    padding: .1rem .4rem;
+    margin: 0 .1rem;
+    text-decoration: none;
+  }
+  nav a:visited {
+    color: white;
+    border-bottom: .2rem solid white;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: white;
+    border-bottom: .2rem solid white;
+    text-decoration: none;
+  }
+  nav a:active {
+    color: lightsalmon;
+    border-bottom: .2rem solid lightsalmon;
+    text-decoration: none;
+  }
+  .buttons a {
+    background-color: #0C5179;
+    color: white;
+    border: .2rem solid white;
+    padding: .1rem .4rem;
+    text-decoration: none;
+  }
+  .buttons a:visited {
+    color: white;
+    border: .2rem solid white;
+    text-decoration: none;
+  }
+  .buttons a:hover {
+    border: .2rem solid white;
+    color: white;
+    text-decoration: none;
+  }
+  .buttons a:active {
+    border: .2rem solid lightsalmon;
+    color: lightsalmon;
+    text-decoration: none;
   }
 }
 
@@ -104,6 +148,14 @@ h1 {
   h1.logo {
   padding-left: 0;
   }
+  nav a:hover {
+    color: salmon;
+    border-bottom: .2rem solid salmon;
+  }
+  .buttons a:hover {
+    border: .2rem solid salmon;
+    color: salmon;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -147,34 +199,21 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-a:link {
-  color: white;
-  text-decoration: none;
-}
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  color: white;
-  text-decoration: none;
-}
-a:active {
-  color: white;
-  text-decoration: none;
-}
 
 body { 
   background: #1D2731 !important; /* that !important overrides the bootstrap setting*/
 }
 h2, h3, p, a {
-  font-family: "oswald";
+  font-family: "Oswald", sans-serif;
 }
-p{
+p {
   margin: 1rem auto;
   text-align: justify;
   text-justify: inter-word;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: .03rem;
+  color: white;
 }
 .glyphicon {
   margin: 0;
@@ -196,35 +235,6 @@ p{
 nav {
   margin-top: 1.4rem;
 }
-
-nav a:link {
-  font-size: 1rem;
-  color: white;
-  border-bottom: .2rem solid white;
-  padding: .1rem .4rem;
-  margin: 0 .1rem;
-  text-decoration: none;
-}
-nav a:visited {
-  font-size: 1rem;
-  color: white;
-  border-bottom: .2rem solid white;
-  padding: .1rem .4rem;
-  margin: 0 .1rem;
-  text-decoration: none;
-}
-nav a:active {
-  color: lightsalmon;
-  padding: .1rem .4rem;
-  border-bottom: .2rem solid lightsalmon;
-  text-decoration: none;
-}
-nav a:hover {
-  color: salmon;
-  padding: .1rem .4rem;
-  border-bottom: .2rem solid salmon;
-  text-decoration: none;
-}
 .about-me {
   padding: .5rem;
   background-color: #0C5179;
@@ -234,8 +244,6 @@ nav a:hover {
 }
 .about-me p {
   margin: .8rem;
-  font-size: 1rem;
-  color: white;
 }
 
 .skills {
@@ -260,7 +268,6 @@ div.icons {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.4rem;
-  color: white;
   padding: -1.5rem 1rem;
 }
 .project-showcase {
@@ -272,9 +279,8 @@ h3 {
   font-size: 1.5rem;
   margin-right: .9rem;
   display: inline-block;
+  color: white;
 }
-
-
 .project-info {
   display: inline-block;
   margin: 0rem .8rem; .5rem .8rem;
@@ -283,25 +289,4 @@ h3 {
   font-size: 1rem;
   margin-bottom: .8rem;
   display: inline-block;
-}
-.buttons a {
-  background-color: #0C5179;
-  color: white;
-  border: .2rem solid white;
-  padding: .1rem .4rem;
-  text-decoration: none;
-}
-
-.buttons a:visited {
-  text-decoration: none;
-}
-
-.buttons a:hover {
-  border: .2rem solid salmon;
-  color: salmon;
-}
-
-.buttons a:active {
-  border: .2rem solid lightsalmon;
-  color: lightsalmon;
 }
