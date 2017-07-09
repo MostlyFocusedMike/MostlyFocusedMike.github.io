@@ -32,7 +32,6 @@
   }
   h1.logo {
   font-family: "Oswald";
-  font-weight: 500;
   margin-top: .9rem;
   padding-right: 0;
   color: #fbfbfb;
@@ -176,7 +175,10 @@ h1 {
   html {
     font-size: 16px;
   }
-
+  .header img {
+    width: 6rem;
+    height: 4rem;
+  }
 }
 
 .red {
@@ -223,17 +225,22 @@ p {
 .tab {
   margin-left: 2em;
 }
-#header-fix {
-  background-color: #0C5179;
-  width: 100%;
-  height: 4.2rem;
-  position: absolute;
+
+/*
+#header-fix {background-color: #0C5179; width: 100%;height: 4.2remposition: absolute; }
+*/
+.top {
+  margin-top: 4rem;
 }
 .header {
   background-color: #0C5179;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  box-shadow: .4rem .1rem 1rem  #222; 
 }
 nav {
-  margin-top: 1.4rem;
+  margin-top: 1.2rem;
 }
 .about-me {
   padding: .5rem;
