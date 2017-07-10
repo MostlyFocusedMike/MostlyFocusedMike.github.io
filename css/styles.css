@@ -1,60 +1,17 @@
+/*MEDIA QUERIEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 @media only screen and (min-width : 320px) {
-  h1 {
-    color: orange;
-  }
   html {
     font-size: 16px;
     font-family: monospace, sans-serif;
   }
-  #back-column {
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  background-color: #DBDBDB;
-  position: fixed;
-  z-index: -1;
-  left: 5%;
-  }
-  h2.section-title {
-  font-size: 1.5 rem;
-  padding: 0;
-  text-transform:uppercase;
-  color: #0C5179;
-  padding-left: .5rem;
-  margin-bottom: 1rem;
-  text-shadow: .4rem .4rem .6rem  #99999f;
-  }
-  .line {
-  width: 10rem;
-  margin: 1rem auto;
-  border-bottom: .1rem solid #D9B310;
-/*  box-shadow: .5rem .5rem .5rem #004178;*/
-  }
   h1.logo {
-  font-family: "Oswald";
-  margin-top: .9rem;
-  padding-right: 0;
-  color: #fbfbfb;
-  font-size: 2rem;
+    font-family: "Oswald";
+    margin-top: .9rem;
+    padding-right: 0;
+    color: #fbfbfb;
+    font-size: 2rem;
   }
-  .skill-icon {
-  float: left;
-  width: 4rem;
-  height: 6rem;
-  margin: .5rem;
-  display: inline-block;
-  }
-  img.project-icon {
-    margin: .5rem auto -2rem;
-    width: 15rem;
-    height: 15rem;
-    display: inline-block;
-/*
-    -webkit-filter: drop-shadow(.5rem .5rem .5rem #222);
-    filter: drop-shadow(.5rem .5rem .5rem #222); 
-*/
-  }
-  nav a:link {
+    nav a:link {
     font-size: 1.2rem;
     color: white;
     border-bottom: .2rem solid white;
@@ -77,29 +34,7 @@
     border-bottom: .2rem solid #B82601;
     text-decoration: none;
   }
-  .buttons a {
-    background-color: white;
-    color: #0C5179;
-    border: .2rem solid #0C5179;
-    padding: .1rem .4rem;
-    text-decoration: none;
-  }
-  .buttons a:visited {
-    color: #0C5179;
-    border: .2rem solid #0C5179;
-    text-decoration: none;
-  }
-  .buttons a:hover {
-    border: .2rem solid #0C5179;
-    color: #0C5179;
-    text-decoration: none;
-  }
-  .buttons a:active {
-    border: .2rem solid #B82601;
-    color: #B82601;
-    text-decoration: none;
-  }
-  .jumbotron {
+    .jumbotron {
     margin: 3.7rem auto 1rem;
     background: url(/images/Grand-Central-Clock.jpg);
     background-size: cover;
@@ -129,13 +64,68 @@
     clear: right;
     margin: 0rem 2rem;
   }
+  #back-column {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #DBDBDB;
+    position: fixed;
+    z-index: -1;
+    left: 5%;
+  }
+  h2.section-title {
+    font-size: 1.5 rem;
+    padding: 0;
+    text-transform:uppercase;
+    color: #0C5179;
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+    text-shadow: .4rem .4rem .6rem  #99999f;
+  }
+  .line {
+    width: 10rem;
+    margin: 1rem auto;
+    border-bottom: .1rem solid #D9B310;
+  }
+  .skill-icon {
+    float: left;
+    width: 4rem;
+    height: 6rem;
+    margin: .5rem;
+    display: inline-block;
+  }
+  img.project-icon {
+    margin: .5rem auto -2rem;
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+  }
+  .buttons a {
+    background-color: white;
+    color: #0C5179;
+    border: .2rem solid #0C5179;
+    padding: .1rem .4rem;
+    text-decoration: none;
+  }
+  .buttons a:visited {
+    color: #0C5179;
+    border: .2rem solid #0C5179;
+    text-decoration: none;
+  }
+  .buttons a:hover {
+    border: .2rem solid #0C5179;
+    color: #0C5179;
+    text-decoration: none;
+  }
+  .buttons a:active {
+    border: .2rem solid #B82601;
+    color: #B82601;
+    text-decoration: none;
+  }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-  h1 {
-    color:aquamarine;
-  }
   html {
     font-size: 16px;
   }
@@ -163,26 +153,19 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-h1 {
-  color: red;
-}
   html {
     font-size: 11px;
   }
   #back-column {
-  width: 70%;
-  left: 15%;
-  }
-  h1.logo {
-  padding-left: 0;
+    width: 70%;
+    left: 15%;
   }
   nav a:hover {
     color: #B82601;
     border-bottom: .2rem solid #B82601;
   }
-  .buttons a:hover {
-    border: .2rem solid #B82601;
-    color: #B82601;
+  h1.logo {
+    padding-left: 0;
   }
   .jumbotron {
     margin: 3.7rem auto 1rem;
@@ -200,13 +183,6 @@ h1 {
     color: white;
     font-size: 5rem;
   }
-  .top h3 {
-    margin: .3rem 3rem;
-    float: right;
-    clear: right;
-    color: white;
-    font-size: 2.2rem
-  }
   .jumbo-line {
     width: 23rem;
     border-bottom: .2rem solid #D9B310;
@@ -214,18 +190,27 @@ h1 {
     clear: right;
     margin: 0rem 3rem;
   }
+  .top h3 {
+    margin: .3rem 3rem;
+    float: right;
+    clear: right;
+    color: white;
+    font-size: 2.2rem
+  }
   .header img {
     width: 5.7rem;
     height: 3rem;
     margin-top: .55rem;
   }
+  .buttons a:hover {
+    border: .2rem solid #B82601;
+    color: #B82601;
+  }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-h1 {
-  color: pink;
-}
   html {
     font-size: 14px;
   }
@@ -238,9 +223,6 @@ h1 {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-h1 {
-  color: black;
-}
   html {
     font-size: 16px;
   }
@@ -251,32 +233,20 @@ h1 {
   }
 }
 
-.red {
-  background-color: red;
-  text-align: center;
-}
-.blue {
-    background-color: blue;
-  text-align: center;
-}
-
-/*MEDIA QUERIEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
-/*COLORS
-#CDCDCD darker white
-#88BBD6 dark blue
-#e9e9e9 lighter white
-#99d3df lighter blue
-*/
+/*MAIN HTML/CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
-
 body { 
   background: #001024 !important; /* that !important overrides the bootstrap setting*/
 }
 h2, h3, p, a {
   font-family: "Oswald", sans-serif;
+}
+.glyphicon {
+  margin: 0;
+  padding: 0;
 }
 p {
   margin: 1rem auto;
@@ -285,14 +255,11 @@ p {
   font-weight: 400;
   color: #334;
 }
-.glyphicon {
-  margin: 0;
-  padding: 0;
-}
-
 .tab {
   margin-left: 2em;
 }
+
+/*HEADER SECTION */
 .header {
   background-color: #1D1D1D;
   position: fixed;
@@ -303,6 +270,8 @@ p {
 nav {
   margin-top: 1.2rem;
 }
+
+/*ABOUT ME*/
 .about-me {
   padding: .5rem;
   background-color: white;
@@ -317,6 +286,7 @@ nav {
   text-align: center;
 }
 
+/*SKILLS*/
 .skills {
   background-color:  white;
   box-shadow: .4rem .4rem 1rem  #888;
@@ -331,6 +301,8 @@ div.icons {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+/*PROJECTS*/
 .projects {
   background-color:  white;
   box-shadow: .4rem .4rem 1rem  #888;
@@ -345,15 +317,15 @@ div.icons {
   width: 24rem;
   padding: 1rem 0rem;
 }
+.project-info {
+  display: inline-block;
+  margin: 0rem .8rem; .5rem .8rem;
+}
 h3 {
   font-size: 1.5rem;
   margin-right: .9rem;
   display: inline-block;
   color: #445;
-}
-.project-info {
-  display: inline-block;
-  margin: 0rem .8rem; .5rem .8rem;
 }
 .buttons {
   font-size: 1rem;
