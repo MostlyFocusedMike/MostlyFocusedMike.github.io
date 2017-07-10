@@ -44,7 +44,7 @@
   margin: .5rem;
   display: inline-block;
   }
-  img.phone-icon {
+  img.project-icon {
     margin: .5rem auto -2rem;
     width: 15rem;
     height: 15rem;
@@ -156,7 +156,7 @@
     margin: 1rem;
     display: inline-block;
   }
-  img.phone-icon {
+  img.project-icon {
     margin: 1rem auto;
   }
 }
