@@ -143,9 +143,6 @@
     width: 90%;
     left: 5%;
   }
-  p {
-    font-size: 5rem;
-  }
   h2.section-title {
     font-size: 2rem;
   }
@@ -284,7 +281,7 @@ h2, h3, p, a {
 p {
   margin: 1rem auto;
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #334;
 }
