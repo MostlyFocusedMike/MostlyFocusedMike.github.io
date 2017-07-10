@@ -27,7 +27,7 @@
   .line {
   width: 10rem;
   margin: 1rem auto;
-  border-bottom: .05rem solid #D9B310;
+  border-bottom: .1rem solid #D9B310;
 /*  box-shadow: .5rem .5rem .5rem #004178;*/
   }
   h1.logo {
@@ -71,8 +71,8 @@
     text-decoration: none;
   }
   nav a:active {
-    color: lightsalmon;
-    border-bottom: .2rem solid lightsalmon;
+    color: #B82601;
+    border-bottom: .2rem solid #B82601;
     text-decoration: none;
   }
   .buttons a {
@@ -88,14 +88,44 @@
     text-decoration: none;
   }
   .buttons a:hover {
-    border: .2rem solid #B82601;
-    color: #B82601;
+    border: .2rem solid #0C5179;
+    color: #0C5179;
     text-decoration: none;
   }
   .buttons a:active {
     border: .2rem solid #B82601;
     color: #B82601;
     text-decoration: none;
+  }
+  .jumbotron {
+    margin: 3.7rem auto 1rem;
+    background: url(/images/Grand-Central-Clock.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: .1rem .4rem 2rem  #112;
+    height: 10rem;
+    width: 90%
+  }
+  .top h1 {
+    margin: 3rem 2rem .2rem 1rem;
+    float: right;
+    clear: right;
+    color: white;
+    font-size: 2.06rem;
+  }
+  .top h3 {
+    margin: .3rem 2rem;
+    float: right;
+    clear: right;
+    color: white;
+    font-size: 1.28rem
+  }
+  .jumbo-line {
+    width: 10rem;
+    border-bottom: .1rem solid #D9B310;
+    float: right;
+    clear: right;
+    margin: 0rem 2rem;
   }
 }
 
@@ -155,6 +185,36 @@ h1 {
     border: .2rem solid #B82601;
     color: #B82601;
   }
+  .jumbotron {
+    margin: 3.7rem auto 1rem;
+    background: url(/images/Grand-Central-Clock.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: .1rem .4rem 2rem  #112;
+    height: 25rem;
+    width: 70%
+  }
+  .top h1 {
+    margin: 11rem 3rem 0rem 1rem;
+    float: right;
+    clear: right;
+    color: white;
+    font-size: 5rem;
+  }
+  .top h3 {
+    margin: .3rem 3rem;
+    float: right;
+    clear: right;
+    color: white;
+    font-size: 2.2rem
+  }
+  .jumbo-line {
+    width: 23rem;
+    border-bottom: .2rem solid #D9B310;
+    float: right;
+    clear: right;
+    margin: 0rem 3rem;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -203,7 +263,7 @@ html, body {
 }
 
 body { 
-  background: #001631 !important; /* that !important overrides the bootstrap setting*/
+  background: #001024 !important; /* that !important overrides the bootstrap setting*/
 }
 h2, h3, p, a {
   font-family: "Oswald", sans-serif;
@@ -211,11 +271,10 @@ h2, h3, p, a {
 p {
   margin: 1rem auto;
   text-align: justify;
-  text-justify: inter-word;
   font-size: 1.3rem;
-  font-weight: 300;
-  letter-spacing: .03rem;
-  color: black;
+  font-weight: 400;
+  color: #334;
+
 }
 .glyphicon {
   margin: 0;
@@ -225,19 +284,12 @@ p {
 .tab {
   margin-left: 2em;
 }
-
-/*
-#header-fix {background-color: #0C5179; width: 100%;height: 4.2remposition: absolute; }
-*/
-.top {
-  margin-top: 4rem;
-}
 .header {
   background-color: #1D1D1D;
   position: fixed;
   z-index: 2;
   width: 100%;
-  box-shadow: .4rem .1rem 1rem  #222; 
+  box-shadow: .4rem .1rem 1rem  #000; 
 }
 nav {
   margin-top: 1.2rem;
@@ -250,7 +302,7 @@ nav {
   text-align: center;
 }
 .about-me p {
-  margin: .8rem;
+  margin: 1rem;
 }
 
 .skills {
@@ -285,7 +337,7 @@ h3 {
   font-size: 1.5rem;
   margin-right: .9rem;
   display: inline-block;
-  color: black;
+  color: #445;
 }
 .project-info {
   display: inline-block;
