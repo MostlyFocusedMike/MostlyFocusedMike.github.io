@@ -315,7 +315,12 @@ nav {
   text-align: center;
 }
 .about-me p {
-  margin: 1rem;
+  margin: 1rem 2rem;
+}
+#quote {
+  text-align: center;
+  color: #B82601;
+  font-style: italic;
 }
 
 .skills {
