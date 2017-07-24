@@ -334,17 +334,17 @@ h3 {
 }
 a.info:link {
     color: #0C5179;
-    text-decoration: none;
+  text-decoration: underline;
   }
 a.info:visited {
     color: #0C5179;
-    text-decoration: none;
+
   }
 a.info:hover {
     color: #B82601;
-    text-decoration: none;
+
   }
 a.info:active {
     color: #B82601;
-    text-decoration: none;
+
   }
