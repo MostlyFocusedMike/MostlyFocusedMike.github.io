@@ -1,69 +1,70 @@
+
 /*MEDIA QUERIEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width : 320px) {
   html {
     font-size: 16px;
-    font-family: monospace, sans-serif; }
-
+    font-family: monospace, sans-serif;
+  }
   h1.logo {
     font-family: "Oswald";
     margin-top: .9rem;
     padding-right: 0;
     color: #fbfbfb;
-    font-size: 2rem; }
-
-  nav a:link {
+    font-size: 2rem;
+  }
+    nav a:link {
     font-size: 1.2rem;
     color: white;
     border-bottom: .2rem solid white;
     padding: .1rem .4rem;
     margin: 0 .1rem;
-    text-decoration: none; }
-
+    text-decoration: none;
+  }
   nav a:visited {
     color: white;
     border-bottom: .2rem solid white;
-    text-decoration: none; }
-
+    text-decoration: none;
+  }
   nav a:hover {
     color: white;
     border-bottom: .2rem solid white;
-    text-decoration: none; }
-
+    text-decoration: none;
+  }
   nav a:active {
     color: #B82601;
     border-bottom: .2rem solid #B82601;
-    text-decoration: none; }
-
-  .jumbotron {
+    text-decoration: none;
+  }
+    .jumbotron {
     margin: 3.7rem auto 1rem;
     background: url(/images/gc-clock.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: .1rem .4rem 2rem  #112;
     height: 10rem;
-    width: 90%; }
-
+    width: 90%
+  }
   .top h1 {
     margin: 3rem 2rem .2rem 1rem;
     float: right;
     clear: right;
     color: white;
-    font-size: 2.06rem; }
-
+    font-size: 2.06rem;
+  }
   .top h3 {
     margin: .3rem 2rem;
     float: right;
     clear: right;
     color: white;
-    font-size: 1.28rem; }
-
+    font-size: 1.28rem
+  }
   .jumbo-line {
     width: 10rem;
     border-bottom: .1rem solid #D9B310;
     float: right;
     clear: right;
-    margin: 0rem 2rem; }
-
+    margin: 0rem 2rem;
+  }
   #back-column {
     height: 100%;
     width: 90%;
@@ -71,96 +72,102 @@
     background-color: #DBDBDB;
     position: fixed;
     z-index: -1;
-    left: 5%; }
-
+    left: 5%;
+  }
   h2.section-title {
     font-size: 1.5 rem;
     padding: 0;
-    text-transform: uppercase;
+    text-transform:uppercase;
     color: #0C5179;
     padding-left: .5rem;
     margin-bottom: 1rem;
-    text-shadow: .4rem .4rem .6rem  #99999f; }
-
+    text-shadow: .4rem .4rem .6rem  #99999f;
+  }
   .line {
     width: 10rem;
     margin: 1rem auto;
-    border-bottom: .1rem solid #D9B310; }
-
+    border-bottom: .1rem solid #D9B310;
+  }
   .skill-icon {
     float: left;
     width: 4rem;
     height: 6rem;
     margin: .5rem;
-    display: inline-block; }
-
+    display: inline-block;
+  }
   img.project-icon {
     margin: .5rem auto -2rem;
     width: 15rem;
     height: 15rem;
-    display: inline-block; }
-
+    display: inline-block;
+  }
   .buttons a {
     background-color: white;
     color: #0C5179;
     border: .2rem solid #0C5179;
     padding: .1rem .4rem;
-    text-decoration: none; }
-
+    text-decoration: none;
+  }
   .buttons a:visited {
     color: #0C5179;
     border: .2rem solid #0C5179;
-    text-decoration: none; }
-
+    text-decoration: none;
+  }
   .buttons a:hover {
     border: .2rem solid #0C5179;
     color: #0C5179;
-    text-decoration: none; }
-
+    text-decoration: none;
+  }
   .buttons a:active {
     border: .2rem solid #B82601;
     color: #B82601;
-    text-decoration: none; } }
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  html {
-    font-size: 16px; }
+    text-decoration: none;
+  }
+}
 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  html {
+    font-size: 16px;
+  }
   #back-column {
     width: 90%;
-    left: 5%; }
-
+    left: 5%;
+  }
   h2.section-title {
-    font-size: 2rem; }
-
+    font-size: 2rem;
+  }
   .line {
-    width: 10rem; }
-
+    width: 10rem;
+  }
   .skill-icon {
     float: left;
     width: 6rem;
     height: 9rem;
     margin: 1rem;
-    display: inline-block; }
-
+    display: inline-block;
+  }
   img.project-icon {
-    margin: 1rem auto; } }
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  html {
-    font-size: 11px; }
+    margin: 1rem auto;
+  }
+}
 
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  html {
+    font-size: 11px;
+  }
   #back-column {
     width: 70%;
-    left: 15%; }
-
+    left: 15%;
+  }
   nav a:hover {
     color: #B82601;
-    border-bottom: .2rem solid #B82601; }
-
+    border-bottom: .2rem solid #B82601;
+  }
   h1.logo {
-    padding-left: 0; }
-
+    padding-left: 0;
+  }
   .jumbotron {
     margin: 3.7rem auto 1rem;
     background: url(/images/gc-clock.jpg);
@@ -168,80 +175,90 @@
     background-repeat: no-repeat;
     box-shadow: .1rem .4rem 2rem  #112;
     height: 25rem;
-    width: 70%; }
-
+    width: 70%
+  }
   .top h1 {
     margin: 11rem 3rem 0rem 1rem;
     float: right;
     clear: right;
     color: white;
-    font-size: 5rem; }
-
+    font-size: 5rem;
+  }
   .jumbo-line {
     width: 23rem;
     border-bottom: .2rem solid #D9B310;
     float: right;
     clear: right;
-    margin: 0rem 3rem; }
-
+    margin: 0rem 3rem;
+  }
   .top h3 {
     margin: .3rem 3rem;
     float: right;
     clear: right;
     color: white;
-    font-size: 2.2rem; }
-
+    font-size: 2.2rem
+  }
   .header img {
     width: 5.7rem;
     height: 3rem;
-    margin-top: .55rem; }
-
+    margin-top: .55rem;
+  }
   .buttons a:hover {
     border: .2rem solid #B82601;
-    color: #B82601; } }
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  html {
-    font-size: 14px; }
+    color: #B82601;
+  }
 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  html {
+    font-size: 14px;
+  }
   .header img {
     width: 5rem;
     height: 2.9rem;
-    margin-top: .5rem; } }
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 16px; }
+    margin-top: .5rem;
+  }
+}
 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  html {
+    font-size: 16px;
+  }
   .header img {
     margin-top: 0;
     width: 6rem;
-    height: 4rem; } }
+    height: 4rem;
+  }
+}
+
 /*MAIN HTML/CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 html, body {
-  max-width: 100%;
-  overflow-x: hidden; }
-
-body {
-  background: #001024 !important;
-  /* that !important overrides the bootstrap setting*/ }
-
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body { 
+  background: #001024 !important; /* that !important overrides the bootstrap setting*/
+}
 h2, h3, p, a {
-  font-family: "Oswald", sans-serif; }
-
+  font-family: "Oswald", sans-serif;
+}
 .glyphicon {
   margin: 0;
-  padding: 0; }
-
+  padding: 0;
+}
 p {
   margin: 1rem auto;
   text-align: justify;
   font-size: 1.1rem;
   font-weight: 400;
-  color: #334; }
-
+  color: #334;
+}
 .tab {
-  margin-left: 2em; }
+  margin-left: 2em;
+}
 
 /*HEADER SECTION */
 .header {
@@ -249,10 +266,11 @@ p {
   position: fixed;
   z-index: 2;
   width: 100%;
-  box-shadow: .4rem .1rem 1rem  #000; }
-
+  box-shadow: .4rem .1rem 1rem  #000; 
+}
 nav {
-  margin-top: 1.2rem; }
+  margin-top: 1.2rem;
+}
 
 /*ABOUT ME*/
 .about-me {
@@ -260,70 +278,74 @@ nav {
   background-color: white;
   margin-bottom: 1.2rem;
   box-shadow: .4rem .4rem 1rem  #888;
-  text-align: center; }
-
+  text-align: center;
+}
 .about-me p {
-  margin: 1rem 2rem; }
-
+  margin: 1rem 2rem;
+}
 #quote {
-  text-align: center; }
+  text-align: center;
+}
 
 /*SKILLS*/
 .skills {
-  background-color: white;
+  background-color:  white;
   box-shadow: .4rem .4rem 1rem  #888;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.4rem;
-  padding: .8rem 2rem; }
-
+  padding: .8rem 2rem;
+}
 div.icons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+}
 
 /*PROJECTS*/
 .projects {
-  background-color: white;
+  background-color:  white;
   box-shadow: .4rem .4rem 1rem  #888;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.4rem;
-  padding: -1.5rem 1rem; }
-
+  padding: -1.5rem 1rem;
+}
 .project-showcase {
   margin-bottom: 0;
   width: 24rem;
-  padding: 1rem 0rem; }
-
+  padding: 1rem 0rem;
+}
 .project-info {
   display: inline-block;
-  margin: 0rem .8rem .5rem .8rem; }
-
+  margin: 0rem .8rem .5rem .8rem;
+}
 h3 {
   font-size: 1.5rem;
   margin-right: .9rem;
   display: inline-block;
-  color: #445; }
-
+  color: #445;
+}
 .buttons {
   font-size: 1rem;
   margin-bottom: .8rem;
-  display: inline-block; }
-
+  display: inline-block;
+}
 a.info:link {
-  color: #0C5179;
-  text-decoration: underline; }
-
+    color: #0C5179;
+  text-decoration: underline;
+  }
 a.info:visited {
-  color: #0C5179; }
+    color: #0C5179;
 
+  }
 a.info:hover {
-  color: #B82601; }
+    color: #B82601;
 
+  }
 a.info:active {
-  color: #B82601; }
+    color: #B82601;
 
-/*# sourceMappingURL=styles.css.map */
+  }
