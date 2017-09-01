@@ -2,125 +2,107 @@
 @media only screen and (min-width: 320px) {
   html {
     font-size: 16px;
-    font-family: monospace, sans-serif; }
-
-  h1.logo {
-    font-family: "Oswald";
-    margin-top: .9rem;
-    padding-right: 0;
-    color: #fbfbfb;
-    font-size: 2rem; }
-
-  nav a:link {
-    font-size: 1.2rem;
-    color: white;
-    border-bottom: .2rem solid white;
-    padding: .1rem .4rem;
-    margin: 0 .1rem;
-    text-decoration: none; }
-
-  nav a:visited {
-    color: white;
-    border-bottom: .2rem solid white;
-    text-decoration: none; }
-
-  nav a:hover {
-    color: white;
-    border-bottom: .2rem solid white;
-    text-decoration: none; }
-
-  nav a:active {
-    color: #B82601;
-    border-bottom: .2rem solid #B82601;
-    text-decoration: none; }
-
-  .jumbotron {
-    margin: 3.7rem auto 1rem;
-    background: url(/images/gc-clock.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: .1rem .4rem 2rem  #112;
-    height: 10rem;
-    width: 90%; }
-
-  .top h1 {
-    margin: 3rem 2rem .2rem 1rem;
-    float: right;
-    clear: right;
-    color: white;
-    font-size: 2.06rem; }
-
-  .top h3 {
-    margin: .3rem 2rem;
-    float: right;
-    clear: right;
-    color: white;
-    font-size: 1.28rem; }
-
-  .jumbo-line {
-    width: 10rem;
-    border-bottom: .1rem solid #D9B310;
-    float: right;
-    clear: right;
-    margin: 0rem 2rem; }
-
-  #back-column {
-    height: 100%;
-    width: 90%;
-    margin: 0 auto;
-    background-color: #DBDBDB;
-    position: fixed;
-    z-index: -1;
-    left: 5%; }
-
-  h2.section-title {
-    font-size: 1.5 rem;
-    padding: 0;
-    text-transform: uppercase;
-    color: #0C5179;
-    padding-left: .5rem;
-    margin-bottom: 1rem;
-    text-shadow: .4rem .4rem .6rem  #99999f; }
-
-  .line {
-    width: 10rem;
-    margin: 1rem auto;
-    border-bottom: .1rem solid #D9B310; }
-
-  .skill-icon {
-    float: left;
-    width: 4rem;
-    height: 6rem;
-    margin: .5rem;
-    display: inline-block; }
-
-  img.project-icon {
-    margin: .5rem auto -2rem;
-    width: 15rem;
-    height: 15rem;
-    display: inline-block; }
-
-  .buttons a {
-    background-color: white;
-    color: #0C5179;
-    border: .2rem solid #0C5179;
-    padding: .1rem .4rem;
-    text-decoration: none; }
-
-  .buttons a:visited {
-    color: #0C5179;
-    border: .2rem solid #0C5179;
-    text-decoration: none; }
-
-  .buttons a:hover {
-    border: .2rem solid #0C5179;
-    color: #0C5179;
-    text-decoration: none; }
-
-  .buttons a:active {
-    border: .2rem solid #B82601;
-    color: #B82601;
-    text-decoration: none; } }
+    font-family: helvetica, sans-serif; }
+    html #back-column {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      background-color: #DBDBDB;
+      position: fixed;
+      z-index: -1;
+      left: 5%; }
+    html .header h1.logo {
+      font-family: "Oswald";
+      margin-top: .9rem;
+      padding-right: 0;
+      color: #fbfbfb;
+      font-size: 2rem; }
+    html .header nav a {
+      font-size: 1.2rem;
+      color: white;
+      border-bottom: .2rem solid white;
+      padding: .1rem .4rem;
+      margin: 0 .1rem;
+      text-decoration: none; }
+      html .header nav a:visited {
+        color: white;
+        border-bottom: .2rem solid white;
+        text-decoration: none; }
+      html .header nav a:hover {
+        color: white;
+        border-bottom: .2rem solid white;
+        text-decoration: none; }
+      html .header nav a:active {
+        color: #B82601;
+        border-bottom: .2rem solid #B82601;
+        text-decoration: none; }
+    html .jumbotron {
+      margin: 3.7rem auto 1rem;
+      background: url(/images/gc-clock.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+      height: 10rem;
+      width: 90%; }
+      html .jumbotron h1 {
+        margin: 3rem 2rem .2rem 1rem;
+        float: right;
+        clear: right;
+        color: white;
+        font-size: 2.06rem; }
+      html .jumbotron .jumbo-line {
+        width: 10rem;
+        border-bottom: .1rem solid #D9B310;
+        float: right;
+        clear: right;
+        margin: 0rem 2rem; }
+      html .jumbotron h3 {
+        margin: .3rem 2rem;
+        float: right;
+        clear: right;
+        color: white;
+        font-size: 1.28rem; }
+    html #projects-section img.project-icon {
+      margin: .5rem auto -2rem;
+      width: 17rem;
+      height: 15rem;
+      display: inline-block; }
+    html #skills-section .skill-icon {
+      float: left;
+      width: 4rem;
+      height: 6rem;
+      margin: .5rem;
+      display: inline-block; }
+    html h2.section-title {
+      font-size: 1.5 rem;
+      padding: 0;
+      text-transform: uppercase;
+      color: #0C5179;
+      padding-left: .5rem;
+      margin-bottom: 1rem;
+      text-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2); }
+    html .line {
+      width: 10rem;
+      margin: 1rem auto;
+      border-bottom: .1rem solid #D9B310; }
+    html .buttons a {
+      background-color: white;
+      color: #0C5179;
+      border: .2rem solid #0C5179;
+      padding: .1rem .4rem;
+      text-decoration: none; }
+      html .buttons a:visited {
+        color: #0C5179;
+        border: .2rem solid #0C5179;
+        text-decoration: none; }
+      html .buttons a:hover {
+        border: .2rem solid #0C5179;
+        color: #0C5179;
+        text-decoration: none; }
+      html .buttons a:active {
+        border: .2rem solid #B82601;
+        color: #B82601;
+        text-decoration: none; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   html {
@@ -166,7 +148,7 @@
     background: url(/images/gc-clock.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: .1rem .4rem 2rem  #112;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
     height: 25rem;
     width: 70%; }
 
@@ -249,7 +231,7 @@ p {
   position: fixed;
   z-index: 2;
   width: 100%;
-  box-shadow: .4rem .1rem 1rem  #000; }
+  box-shadow: 0rem 0.4rem 1.5rem rgba(0, 0, 0, 0.4); }
 
 nav {
   margin-top: 1.2rem; }
@@ -259,7 +241,7 @@ nav {
   padding: .5rem;
   background-color: white;
   margin-bottom: 1.2rem;
-  box-shadow: .4rem .4rem 1rem  #888;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   text-align: center; }
 
 .about-me p {
@@ -271,7 +253,7 @@ nav {
 /*SKILLS*/
 .skills {
   background-color: white;
-  box-shadow: .4rem .4rem 1rem  #888;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -286,7 +268,7 @@ div.icons {
 /*PROJECTS*/
 .projects {
   background-color: white;
-  box-shadow: .4rem .4rem 1rem  #888;
+  box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
