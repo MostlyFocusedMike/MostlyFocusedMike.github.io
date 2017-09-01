@@ -15,7 +15,6 @@ $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
       left: 5%;
     }
     
-    
     .header {
       h1.logo {
         font-family: "Oswald";
@@ -86,7 +85,7 @@ $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
     #projects-section {
       img.project-icon {
         margin: .5rem auto -2rem;
-        width: 17rem;
+        width: 15rem;
         height: 15rem;
         display: inline-block;
       }
@@ -101,7 +100,6 @@ $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
         display: inline-block;
       }
     }
-    
     
     h2.section-title {
       font-size: 1.5 rem;
@@ -146,96 +144,114 @@ $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
 @media only screen and (min-width : 480px) {
   html {
     font-size: 16px;
-  }
-  #back-column {
-    width: 90%;
-    left: 5%;
-  }
-  h2.section-title {
-    font-size: 2rem;
-  }
-  .line {
-    width: 10rem;
-  }
-  .skill-icon {
-    float: left;
-    width: 6rem;
-    height: 9rem;
-    margin: 1rem;
-    display: inline-block;
-  }
-  img.project-icon {
-    margin: 1rem auto;
+    #back-column {
+      width: 90%;
+      left: 5%;
+    }
+    
+    #projects-section {
+      img.project-icon {
+        margin: 1rem auto;
+      }
+    }
+    
+    #skills-section {
+      .skill-icon {
+        float: left;
+        width: 6rem;
+        height: 9rem;
+        margin: 1rem;
+        display: inline-block;
+      }
+    }
+ 
+    h2.section-title {
+      font-size: 2rem;
+    }
+    .line {
+      width: 10rem;
+    }
   }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
   html {
-    font-size: 11px;
-  }
-  #back-column {
-    width: 70%;
-    left: 15%;
-  }
-  nav a:hover {
-    color: #B82601;
-    border-bottom: .2rem solid #B82601;
-  }
-  h1.logo {
-    padding-left: 0;
-  }
-  .jumbotron {
+    font-size: 12px;
+    #back-column {
+      width: 70%;
+      left: 15%;
+    }
+    
+    .header {
+      h1.logo {
+        font-size: 1.8rem;
+        padding-left: 0;
+      }
+      .header img {
+        width: 5.7rem;
+        height: 3rem;
+        margin-top: .55rem;
+      }
+      nav a:hover {
+        color: #B82601;
+        border-bottom: .2rem solid #B82601;
+      }
+    }
+  
+    .jumbotron {
     margin: 3.7rem auto 1rem;
     background: url(/images/gc-clock.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: $card-level-shadow;
     height: 25rem;
-    width: 70%
+    width: 70%;
+    h1 {
+      margin: 11rem 3rem 0rem 1rem;
+      float: right;
+      clear: right;
+      color: white;
+      font-size: 5rem;
+    }
+    .jumbo-line {
+      width: 23rem;
+      border-bottom: .2rem solid #D9B310;
+      float: right;
+      clear: right;
+      margin: 0rem 3rem;
+    }
+    h3 {
+      margin: .3rem 3rem;
+      float: right;
+      clear: right;
+      color: white;
+      font-size: 2.2rem
+    }
   }
-  .top h1 {
-    margin: 11rem 3rem 0rem 1rem;
-    float: right;
-    clear: right;
-    color: white;
-    font-size: 5rem;
+  
+    .buttons a:hover {
+      border: .2rem solid #B82601;
+      color: #B82601;
+    }
   }
-  .jumbo-line {
-    width: 23rem;
-    border-bottom: .2rem solid #D9B310;
-    float: right;
-    clear: right;
-    margin: 0rem 3rem;
-  }
-  .top h3 {
-    margin: .3rem 3rem;
-    float: right;
-    clear: right;
-    color: white;
-    font-size: 2.2rem
-  }
-  .header img {
-    width: 5.7rem;
-    height: 3rem;
-    margin-top: .55rem;
-  }
-  .buttons a:hover {
-    border: .2rem solid #B82601;
-    color: #B82601;
-  }
-
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   html {
     font-size: 14px;
-  }
-  .header img {
-    width: 5rem;
-    height: 2.9rem;
-    margin-top: .5rem;
+    .header {
+      h1 {
+        font-size: 2rem;
+      }
+      img {
+        width: 5rem;
+        height: 2.9rem;
+        margin-top: .5rem;
+        margin-bottom: .4rem;
+      }
+    } 
   }
 }
 
@@ -243,126 +259,123 @@ $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
 @media only screen and (min-width : 1200px) {
   html {
     font-size: 16px;
-  }
-  .header img {
-    margin-top: 0;
-    width: 6rem;
-    height: 4rem;
+    .header img {
+      margin-top: 0;
+      width: 6rem;
+      height: 4rem;
+    }
   }
 }
 
 /*MAIN HTML/CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-body { 
-  background: #001024 !important; /* that !important overrides the bootstrap setting*/
-}
-h2, h3, p, a {
+  max-width: 100%;
+  overflow-x: hidden; 
   font-family: "Oswald", sans-serif;
-}
-.glyphicon {
-  margin: 0;
-  padding: 0;
-}
-p {
-  margin: 1rem auto;
-  text-align: justify;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #334;
-}
-.tab {
-  margin-left: 2em;
-}
-
-/*HEADER SECTION */
-.header {
-  background-color: #1D1D1D;
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  box-shadow: $header-shadow; 
-}
-nav {
-  margin-top: 1.2rem;
-}
-
-/*ABOUT ME*/
-.about-me {
-  padding: .5rem;
-  background-color: white;
-  margin-bottom: 1.2rem;
-  box-shadow: $card-level-shadow;
-  text-align: center;
-}
-.about-me p {
-  margin: 1rem 2rem;
-}
-#quote {
-  text-align: center;
-}
-
-/*SKILLS*/
-.skills {
-  background-color:  white;
-  box-shadow: $card-level-shadow;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1.4rem;
-  padding: .8rem 2rem;
-}
-div.icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/*PROJECTS*/
-.projects {
-  background-color:  white;
-  box-shadow: $card-level-shadow;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1.4rem;
-  padding: -1.5rem 1rem;
-}
-.project-showcase {
-  margin-bottom: 0;
-  width: 24rem;
-  padding: 1rem 0rem;
-}
-.project-info {
-  display: inline-block;
-  margin: 0rem .8rem .5rem .8rem;
-}
-h3 {
-  font-size: 1.5rem;
-  margin-right: .9rem;
-  display: inline-block;
-  color: #445;
-}
-.buttons {
-  font-size: 1rem;
-  margin-bottom: .8rem;
-  display: inline-block;
-}
-a.info:link {
-    color: #0C5179;
-  text-decoration: underline;
+  body {
+    background: #001024 !important; /* that !important overrides the bootstrap setting*/
+    .header {
+      background-color: #1D1D1D;
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      box-shadow: $header-shadow;
+      nav {
+        margin-top: 1.2rem;
+        .glyphicon {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }  
+    
+    #projects-section {
+      .project-card {
+        background-color: white;
+        box-shadow: $card-level-shadow;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1.4rem;
+        padding: -1.5rem 1rem;
+        .project-showcase {
+          margin-bottom: 0;
+          width: 24rem;
+          padding: 1rem 0rem;
+          .project-info {
+            display: inline-block;
+            margin: 0rem .8rem .5rem .8rem;
+            h3.project-title {
+              font-size: 1.5rem;
+              margin-right: .9rem;
+              display: inline-block;
+              color: #445;
+            }
+            .buttons {
+              font-size: 1rem;
+              margin-bottom: .8rem;
+              display: inline-block;
+            }
+            a.info {
+              color: #0C5179;
+              text-decoration: underline;
+              &:visited {
+                color: #0C5179;
+              }
+              &:hover {
+                color: #B82601;
+              }
+              &:active {
+                color: #B82601;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+    #skills-section {
+      #skills-card {
+        background-color:  white;
+        box-shadow: $card-level-shadow;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 1.4rem;
+        padding: .8rem 2rem;
+        div.skill-icons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+    }
+    
+    #about-me-section {
+      .about-me-card {
+        padding: .5rem;
+        background-color: white;
+        margin-bottom: 1.2rem;
+        box-shadow: $card-level-shadow;
+        text-align: center;
+        p#quote {
+          text-align: center;
+        }
+        p {
+          margin: 1rem 2rem;
+        }
+      }
+    }
+   
+    p {
+      margin: 1rem auto;
+      text-align: justify;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #334;
+      span.tab {
+        margin-left: 2em;
+      }
+    }
   }
-a.info:visited {
-    color: #0C5179;
-
-  }
-a.info:hover {
-    color: #B82601;
-
-  }
-a.info:active {
-    color: #B82601;
-
-  }
+}
