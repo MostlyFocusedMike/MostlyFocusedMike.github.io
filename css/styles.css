@@ -1,273 +1,280 @@
-/*MEDIA QUERIEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+/* phone screens */
 @media only screen and (min-width: 320px) {
-  html {
+  html body #wrapper #projects-section .card-view .card .front, body body #wrapper #projects-section .card-view .card .front, html body #wrapper #projects-section .card-view .card .back, body body #wrapper #projects-section .card-view .card .back, html body #wrapper #projects-section .card-view, body body #wrapper #projects-section .card-view, html body #wrapper #projects-section .card-view .card, body body #wrapper #projects-section .card-view .card {
+    width: 270px;
+    height: 380px; }
+
+  html body #wrapper #projects-section .card-view .card .front, body body #wrapper #projects-section .card-view .card .front, html body #wrapper #projects-section .card-view .card .back, body body #wrapper #projects-section .card-view .card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    color: black;
+    background-color: white;
+    box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+  html body #wrapper #projects-section, body body #wrapper #projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  html body #wrapper #projects-section .card-view .card .front .toggle-label, body body #wrapper #projects-section .card-view .card .front .toggle-label, html body #wrapper #projects-section .card-view .card .back .toggle-label, body body #wrapper #projects-section .card-view .card .back .toggle-label {
+    width: 80px;
+    height: 20px;
+    padding: 10px;
+    background: green;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: white;
+    margin: 1rem auto; }
+
+  html body #wrapper #projects-section h2.section-title, body body #wrapper #projects-section h2.section-title, html body #wrapper #skills-section h2.section-title, body body #wrapper #skills-section h2.section-title, html body #wrapper #about-me-section h2.section-title, body body #wrapper #about-me-section h2.section-title {
+    display: block;
+    width: 100%;
+    margin-bottom: .25rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #0C5179;
+    text-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+  html, body {
+    padding: 0;
+    margin: 0;
     font-size: 16px;
-    font-family: helvetica, sans-serif; }
-    html #back-column {
-      height: 100%;
-      width: 90%;
-      margin: 0 auto;
-      background-color: #DBDBDB;
-      position: fixed;
-      z-index: -1;
-      left: 5%; }
-    html .header h1.logo {
-      font-family: "Oswald";
-      margin-top: .9rem;
-      padding-right: 0;
-      color: #fbfbfb;
-      font-size: 2rem; }
-    html .header nav a {
-      font-size: 1.2rem;
-      color: white;
-      border-bottom: .2rem solid white;
-      padding: .1rem .4rem;
-      margin: 0 .1rem;
-      text-decoration: none; }
-      html .header nav a:visited {
-        color: white;
-        border-bottom: .2rem solid white;
-        text-decoration: none; }
-      html .header nav a:hover {
-        color: white;
-        border-bottom: .2rem solid white;
-        text-decoration: none; }
-      html .header nav a:active {
-        color: #B82601;
-        border-bottom: .2rem solid #B82601;
-        text-decoration: none; }
-    html .jumbotron {
-      margin: 3.7rem auto 1rem;
-      background: url(/images/gc-clock.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-      height: 10rem;
-      width: 90%; }
-      html .jumbotron h1 {
-        margin: 3rem 2rem .2rem 1rem;
-        float: right;
-        clear: right;
-        color: white;
-        font-size: 2.06rem; }
-      html .jumbotron .jumbo-line {
-        width: 10rem;
-        border-bottom: .1rem solid #D9B310;
-        float: right;
-        clear: right;
-        margin: 0rem 2rem; }
-      html .jumbotron h3 {
-        margin: .3rem 2rem;
-        float: right;
-        clear: right;
-        color: white;
-        font-size: 1.28rem; }
-    html #projects-section img.project-icon {
-      margin: .5rem auto -2rem;
-      width: 15rem;
-      height: 15rem;
-      display: inline-block; }
-    html #skills-section .skill-icon {
-      float: left;
-      width: 4rem;
-      height: 6rem;
-      margin: .5rem;
-      display: inline-block; }
-    html h2.section-title {
-      font-size: 1.5 rem;
-      padding: 0;
-      text-transform: uppercase;
-      color: #0C5179;
-      padding-left: .5rem;
-      margin-bottom: 1rem;
-      text-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2); }
-    html .line {
-      width: 10rem;
-      margin: 1rem auto;
-      border-bottom: .1rem solid #D9B310; }
-    html .buttons a {
-      background-color: white;
-      color: #0C5179;
-      border: .2rem solid #0C5179;
-      padding: .1rem .4rem;
-      text-decoration: none; }
-      html .buttons a:visited {
-        color: #0C5179;
-        border: .2rem solid #0C5179;
-        text-decoration: none; }
-      html .buttons a:hover {
-        border: .2rem solid #0C5179;
-        color: #0C5179;
-        text-decoration: none; }
-      html .buttons a:active {
-        border: .2rem solid #B82601;
-        color: #B82601;
-        text-decoration: none; } }
+    font-family: helvetica, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "Oswald", sans-serif; }
+    html body, body body {
+      background: #001024; }
+      html body #header, body body #header {
+        margin: -.1rem 0rem 0rem;
+        padding: 0;
+        height: 4rem;
+        background-color: #1D1D1D;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        box-shadow: 0rem 0.4rem 1.5rem rgba(0, 0, 0, 0.4); }
+        html body #header img#logo-pic, body body #header img#logo-pic {
+          display: none;
+          height: 2.5rem;
+          float: left;
+          margin: .8rem 0rem .5rem .5rem; }
+        html body #header h1.logo, body body #header h1.logo {
+          font-family: "Oswald";
+          margin: .75rem 0rem 0rem .5rem;
+          padding: 0;
+          color: #fbfbfb;
+          font-size: 1.75rem;
+          float: left; }
+        html body #header nav, body body #header nav {
+          float: right;
+          padding-right: 1rem;
+          margin-top: 1.2rem; }
+          html body #header nav a, body body #header nav a {
+            font-size: 1rem;
+            color: white;
+            border-bottom: .1rem solid white;
+            padding: .1rem .25rem;
+            margin: 0 .1rem;
+            text-decoration: none; }
+            html body #header nav a:visited, body body #header nav a:visited {
+              color: white;
+              border-bottom: .2rem solid white;
+              text-decoration: none; }
+            html body #header nav a:hover, body body #header nav a:hover {
+              color: white;
+              border-bottom: .2rem solid white;
+              text-decoration: none; }
+            html body #header nav a:active, body body #header nav a:active {
+              color: #B82601;
+              border-bottom: .2rem solid #B82601;
+              text-decoration: none; }
+      html body #wrapper, body body #wrapper {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #DBDBDB; }
+        html body #wrapper #marquee, body body #wrapper #marquee {
+          margin: 3.7rem auto 0rem;
+          background: url(/images/gc-clock.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+          height: 10rem;
+          width: 100;
+          position: relative; }
+          html body #wrapper #marquee #marquee-words, body body #wrapper #marquee #marquee-words {
+            position: absolute;
+            text-align: right;
+            right: 1rem;
+            bottom: 1rem;
+            font-size: 1rem;
+            width: 16rem; }
+            html body #wrapper #marquee #marquee-words h1, body body #wrapper #marquee #marquee-words h1 {
+              margin: 0;
+              padding: 0;
+              color: white;
+              font-size: 200%; }
+            html body #wrapper #marquee #marquee-words #marquee-line, body body #wrapper #marquee #marquee-words #marquee-line {
+              width: 50%;
+              border-bottom: .1rem solid #D9B310;
+              margin: 0rem;
+              position: absolute;
+              right: 0; }
+            html body #wrapper #marquee #marquee-words h3, body body #wrapper #marquee #marquee-words h3 {
+              margin: 0;
+              color: white;
+              font-size: 125%; }
+        html body #wrapper .toggle-box, body body #wrapper .toggle-box {
+          display: none; }
+          html body #wrapper .toggle-box:checked ~ .card-view > .card, body body #wrapper .toggle-box:checked ~ .card-view > .card {
+            transform: rotateY(180deg); }
+        html body #wrapper #projects-section, body body #wrapper #projects-section {
+          width: 95%;
+          margin: 0 auto; }
+          html body #wrapper #projects-section .card-view, body body #wrapper #projects-section .card-view {
+            perspective: 1000px;
+            margin: .5rem; }
+            html body #wrapper #projects-section .card-view .card, body body #wrapper #projects-section .card-view .card {
+              position: relative;
+              transform-style: preserve-3d;
+              transition: 750ms;
+              text-align: center; }
+              html body #wrapper #projects-section .card-view .card .front, body body #wrapper #projects-section .card-view .card .front {
+                z-index: 2; }
+                html body #wrapper #projects-section .card-view .card .front h2.project-name, body body #wrapper #projects-section .card-view .card .front h2.project-name {
+                  text-align: center;
+                  margin: 10px auto;
+                  padding: 0; }
+                html body #wrapper #projects-section .card-view .card .front img.project-icon, body body #wrapper #projects-section .card-view .card .front img.project-icon {
+                  position: static;
+                  margin: .5rem auto 1rem;
+                  width: 12rem;
+                  height: 12rem;
+                  display: block; }
+                html body #wrapper #projects-section .card-view .card .front .buttons a, body body #wrapper #projects-section .card-view .card .front .buttons a {
+                  background-color: white;
+                  color: #0C5179;
+                  border: .2rem solid #0C5179;
+                  padding: .1rem .4rem;
+                  text-decoration: none; }
+                  html body #wrapper #projects-section .card-view .card .front .buttons a:visited, body body #wrapper #projects-section .card-view .card .front .buttons a:visited {
+                    color: #0C5179;
+                    border: .2rem solid #0C5179;
+                    text-decoration: none; }
+                  html body #wrapper #projects-section .card-view .card .front .buttons a:hover, body body #wrapper #projects-section .card-view .card .front .buttons a:hover {
+                    border: .2rem solid #0C5179;
+                    color: #0C5179;
+                    text-decoration: none; }
+                  html body #wrapper #projects-section .card-view .card .front .buttons a:active, body body #wrapper #projects-section .card-view .card .front .buttons a:active {
+                    border: .2rem solid #B82601;
+                    color: #B82601;
+                    text-decoration: none; }
+              html body #wrapper #projects-section .card-view .card .back, body body #wrapper #projects-section .card-view .card .back {
+                transform: rotateY(180deg); }
+                html body #wrapper #projects-section .card-view .card .back p, body body #wrapper #projects-section .card-view .card .back p {
+                  width: 13rem;
+                  font-family: arial, sans-serif;
+                  font-size: 1rem; }
+        html body #wrapper #skills-section, body body #wrapper #skills-section {
+          width: 90%;
+          margin: 0 auto;
+          display: block; }
+          html body #wrapper #skills-section #skills-card, body body #wrapper #skills-section #skills-card {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+            text-align: center;
+            background-color: white; }
+            html body #wrapper #skills-section #skills-card p, body body #wrapper #skills-section #skills-card p {
+              text-align: center; }
+            html body #wrapper #skills-section #skills-card .skill-icons, body body #wrapper #skills-section #skills-card .skill-icons {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center; }
+              html body #wrapper #skills-section #skills-card .skill-icons .skill-icon, body body #wrapper #skills-section #skills-card .skill-icons .skill-icon {
+                width: 5rem;
+                height: 7.5rem;
+                margin: .5rem; }
+        html body #wrapper #about-me-section, body body #wrapper #about-me-section {
+          width: 90%;
+          margin: 0 auto 3rem;
+          display: block; }
+          html body #wrapper #about-me-section .about-me-card, body body #wrapper #about-me-section .about-me-card {
+            width: 90%;
+            margin: 0 auto 1.2rem;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+            text-align: center; }
+            html body #wrapper #about-me-section .about-me-card p#quote, body body #wrapper #about-me-section .about-me-card p#quote {
+              text-align: center; }
+        html body #wrapper .line, body body #wrapper .line {
+          width: 10rem;
+          margin: 1rem auto;
+          border-bottom: .1rem solid #D9B310; }
+        html body #wrapper p, body body #wrapper p {
+          width: 90%;
+          margin: 1rem auto;
+          text-align: justify;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #334; }
+          html body #wrapper p span.tab, body body #wrapper p span.tab {
+            margin-left: 2em; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
   html {
     font-size: 16px; }
-    html #back-column {
-      width: 90%;
-      left: 5%; }
-    html #projects-section img.project-icon {
-      margin: 1rem auto; }
-    html #skills-section .skill-icon {
-      float: left;
-      width: 6rem;
-      height: 9rem;
-      margin: 1rem;
-      display: inline-block; }
-    html h2.section-title {
-      font-size: 2rem; }
-    html .line {
-      width: 10rem; } }
+    html body #header img#logo-pic {
+      display: block; }
+    html body #wrapper {
+      width: 85%; }
+      html body #wrapper #marquee {
+        height: 14rem; }
+        html body #wrapper #marquee #marquee-words {
+          font-size: 1.25rem;
+          width: 20rem; } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 12px; }
-    html #back-column {
-      width: 70%;
-      left: 15%; }
-    html .header h1.logo {
-      font-size: 1.8rem;
-      padding-left: 0; }
-    html .header .header img {
-      width: 5.7rem;
-      height: 3rem;
-      margin-top: .55rem; }
-    html .header nav a:hover {
-      color: #B82601;
-      border-bottom: .2rem solid #B82601; }
-    html .jumbotron {
-      margin: 3.7rem auto 1rem;
-      background: url(/images/gc-clock.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-      height: 25rem;
-      width: 70%; }
-      html .jumbotron h1 {
-        margin: 11rem 3rem 0rem 1rem;
-        float: right;
-        clear: right;
-        color: white;
-        font-size: 5rem; }
-      html .jumbotron .jumbo-line {
-        width: 23rem;
-        border-bottom: .2rem solid #D9B310;
-        float: right;
-        clear: right;
-        margin: 0rem 3rem; }
-      html .jumbotron h3 {
-        margin: .3rem 3rem;
-        float: right;
-        clear: right;
-        color: white;
-        font-size: 2.2rem; }
-    html .buttons a:hover {
-      border: .2rem solid #B82601;
-      color: #B82601; } }
+    font-size: 16px; }
+    html body #wrapper {
+      width: 80%; }
+      html body #wrapper #marquee {
+        height: 18rem; }
+        html body #wrapper #marquee #marquee-words {
+          font-size: 1.75rem;
+          width: 28rem; } }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 14px; }
-    html .header h1 {
-      font-size: 2rem; }
-    html .header img {
-      width: 5rem;
-      height: 2.9rem;
-      margin-top: .5rem;
-      margin-bottom: .4rem; } }
+    font-size: 16px; }
+    html body #wrapper {
+      width: 75%; }
+      html body #wrapper #marquee {
+        height: 22rem; }
+        html body #wrapper #marquee #marquee-words {
+          font-size: 1.5rem;
+          width: 24rem; } }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   html {
     font-size: 16px; }
-    html .header img {
-      margin-top: 0;
-      width: 6rem;
-      height: 4rem; } }
-/*MAIN HTML/CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: "Oswald", sans-serif; }
-  html body, body body {
-    background: #001024 !important;
-    /* that !important overrides the bootstrap setting*/ }
-    html body .header, body body .header {
-      background-color: #1D1D1D;
-      position: fixed;
-      z-index: 2;
-      width: 100%;
-      box-shadow: 0rem 0.4rem 1.5rem rgba(0, 0, 0, 0.4); }
-      html body .header nav, body body .header nav {
-        margin-top: 1.2rem; }
-        html body .header nav .glyphicon, body body .header nav .glyphicon {
-          margin: 0;
-          padding: 0; }
-    html body #projects-section .project-card, body body #projects-section .project-card {
-      background-color: white;
-      box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 1.4rem;
-      padding: -1.5rem 1rem; }
-      html body #projects-section .project-card .project-showcase, body body #projects-section .project-card .project-showcase {
-        margin-bottom: 0;
-        width: 24rem;
-        padding: 1rem 0rem; }
-        html body #projects-section .project-card .project-showcase .project-info, body body #projects-section .project-card .project-showcase .project-info {
-          display: inline-block;
-          margin: 0rem .8rem .5rem .8rem; }
-          html body #projects-section .project-card .project-showcase .project-info h3.project-title, body body #projects-section .project-card .project-showcase .project-info h3.project-title {
-            font-size: 1.5rem;
-            margin-right: .9rem;
-            display: inline-block;
-            color: #445; }
-          html body #projects-section .project-card .project-showcase .project-info .buttons, body body #projects-section .project-card .project-showcase .project-info .buttons {
-            font-size: 1rem;
-            margin-bottom: .8rem;
-            display: inline-block; }
-          html body #projects-section .project-card .project-showcase .project-info a.info, body body #projects-section .project-card .project-showcase .project-info a.info {
-            color: #0C5179;
-            text-decoration: underline; }
-            html body #projects-section .project-card .project-showcase .project-info a.info:visited, body body #projects-section .project-card .project-showcase .project-info a.info:visited {
-              color: #0C5179; }
-            html body #projects-section .project-card .project-showcase .project-info a.info:hover, body body #projects-section .project-card .project-showcase .project-info a.info:hover {
-              color: #B82601; }
-            html body #projects-section .project-card .project-showcase .project-info a.info:active, body body #projects-section .project-card .project-showcase .project-info a.info:active {
-              color: #B82601; }
-    html body #skills-section #skills-card, body body #skills-section #skills-card {
-      background-color: white;
-      box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 1.4rem;
-      padding: .8rem 2rem; }
-      html body #skills-section #skills-card div.skill-icons, body body #skills-section #skills-card div.skill-icons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; }
-    html body #about-me-section .about-me-card, body body #about-me-section .about-me-card {
-      padding: .5rem;
-      background-color: white;
-      margin-bottom: 1.2rem;
-      box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-      text-align: center; }
-      html body #about-me-section .about-me-card p#quote, body body #about-me-section .about-me-card p#quote {
-        text-align: center; }
-      html body #about-me-section .about-me-card p, body body #about-me-section .about-me-card p {
-        margin: 1rem 2rem; }
-    html body p, body body p {
-      margin: 1rem auto;
-      text-align: justify;
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: #334; }
-      html body p span.tab, body body p span.tab {
-        margin-left: 2em; }
+    html body #wrapper {
+      width: 70%; }
+      html body #wrapper #marquee {
+        height: 24rem; }
+        html body #wrapper #marquee #marquee-words {
+          font-size: 2rem;
+          width: 32rem; } }
 
 /*# sourceMappingURL=styles.css.map */

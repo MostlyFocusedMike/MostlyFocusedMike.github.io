@@ -1,238 +1,351 @@
-$card-level-shadow: 0rem .2rem .5rem rgba(0,0,0,.2);
-$header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
-/*MEDIA QUERIEESSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+/* phone screens */
 @media only screen and (min-width : 320px) {
-  html {
+  $std-border: 2px solid black;
+  $card-level-shadow: 0rem .2rem .5rem rgba(0,0,0,.2);
+  $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
+  %card-size {
+    width: 270px;
+    height: 380px;
+  }
+  %front-back-settings {
+    @extend %card-size;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    color: black;
+    background-color: white;
+    box-shadow: $card-level-shadow;
+  }
+  %flexy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  %toggle-label {
+    width: 80px;
+    height: 20px;
+    padding: 10px;
+    background: green;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: white;
+    margin: 1rem auto;
+  }
+  %section-title {
+    display: block;
+    width: 100%;
+    margin-bottom: .25rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #0C5179;
+    text-shadow: $card-level-shadow;
+  }
+
+  html, body {
+    padding: 0;
+    margin: 0;
     font-size: 16px;
     font-family: helvetica, sans-serif;
-    #back-column {
-      height: 100%;
-      width: 90%;
-      margin: 0 auto;
-      background-color: #DBDBDB;
-      position: fixed;
-      z-index: -1;
-      left: 5%;
-    }
-    
-    .header {
-      h1.logo {
-        font-family: "Oswald";
-        margin-top: .9rem;
-        padding-right: 0;
-        color: #fbfbfb;
-        font-size: 2rem;
+    max-width: 100%;
+    overflow-x: hidden; 
+    font-family: "Oswald", sans-serif;
+    body {
+      background: #001024;
+      #header {
+        margin: -.1rem 0rem 0rem;
+        padding: 0;
+        height: 4rem;
+        background-color: #1D1D1D;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        box-shadow: $header-shadow;
+        img#logo-pic {
+          display: none;
+          height: 2.5rem;
+          float: left;
+          margin: .8rem 0rem .5rem .5rem;
+        }
+        h1.logo {
+          font-family: "Oswald";
+          margin: .75rem 0rem 0rem .5rem;
+          padding: 0;
+          color: #fbfbfb;
+          font-size: 1.75rem;
+          float: left;
+        } 
+        nav {
+          float: right;
+          padding-right: 1rem;
+          margin-top: 1.2rem;
+          a {
+            font-size: 1rem;
+            color: white;
+            border-bottom: .1rem solid white;
+            padding: .1rem .25rem;
+            margin: 0 .1rem;
+            text-decoration: none;
+            &:visited {
+              color: white;
+              border-bottom: .2rem solid white;
+              text-decoration: none;
+            }
+            &:hover {
+              color: white;
+              border-bottom: .2rem solid white;
+              text-decoration: none;
+            }
+            &:active {
+              color: #B82601;
+              border-bottom: .2rem solid #B82601;
+              text-decoration: none;
+            }
+          }
+        }
       } 
-      nav { 
-        a {
-          font-size: 1.2rem;
-          color: white;
-          border-bottom: .2rem solid white;
-          padding: .1rem .4rem;
-          margin: 0 .1rem;
-          text-decoration: none;
-          &:visited {
-            color: white;
-            border-bottom: .2rem solid white;
-            text-decoration: none;
+      #wrapper {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background-color: #DBDBDB;
+
+        #marquee {
+          margin: 3.7rem auto 0rem;
+          background: url(/images/gc-clock.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          box-shadow: $card-level-shadow;
+          height: 10rem;
+          width: 100;
+          position: relative;
+          #marquee-words {
+            position: absolute;
+            text-align: right;
+            right: 1rem;
+            bottom: 1rem;
+            font-size: 1rem;
+            width: 16rem;
+            h1 {
+              margin: 0;
+              padding: 0;
+              color: white;
+              font-size: 200%;
+            }
+            #marquee-line {
+              width: 50%;
+              border-bottom: .1rem solid #D9B310;
+              margin: 0rem;
+              position: absolute;
+              right: 0;
+            }
+            h3 {
+              margin: 0;
+              color: white;
+              font-size: 125%;
+            }
           }
-          &:hover {
-            color: white;
-            border-bottom: .2rem solid white;
-            text-decoration: none;
-          }
-          &:active {
-            color: #B82601;
-            border-bottom: .2rem solid #B82601;
-            text-decoration: none;
+          
+        }
+
+        .toggle-box {
+        display: none;
+        &:checked ~ .card-view > .card {
+          transform: rotateY(180deg);
+        }
+      }
+        #projects-section {
+        @extend %flexy;
+        width: 95%;
+        margin: 0 auto;
+        h2.section-title {
+          @extend %section-title;
+        }
+        .card-view {
+          @extend %card-size;
+          perspective: 1000px;
+          margin: .5rem;
+          .card {
+            @extend %card-size;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 750ms;
+            text-align: center;
+            .front {
+              @extend %front-back-settings;
+              z-index: 2;
+              h2.project-name {
+                text-align: center;
+                margin: 10px auto;
+                padding: 0;
+              }
+              img.project-icon {
+                position: static;
+                margin: .5rem auto 1rem;
+                width: 12rem;
+                height: 12rem;
+                display: block;
+              }
+              .buttons a {
+                background-color: white;
+                color: #0C5179;
+                border: .2rem solid #0C5179;
+                padding: .1rem .4rem;
+                text-decoration: none;
+                &:visited {
+                  color: #0C5179;
+                  border: .2rem solid #0C5179;
+                  text-decoration: none;
+                }
+                &:hover {
+                  border: .2rem solid #0C5179;
+                  color: #0C5179;
+                  text-decoration: none;
+                }
+                &:active {
+                  border: .2rem solid #B82601;
+                  color: #B82601;
+                  text-decoration: none;
+                }
+              }
+              .toggle-label {
+                @extend %toggle-label;
+              }
+            }
+            .back {
+              @extend %front-back-settings;
+              transform: rotateY(180deg);
+              p {
+                width: 13rem;
+                font-family: arial, sans-serif;
+                font-size: 1rem;
+              }
+              .toggle-label {
+                @extend %toggle-label;      
+              }
+            }
           }
         }
       }
-    } 
-    
-    .jumbotron {
-      margin: 3.7rem auto 1rem;
-      background: url(/images/gc-clock.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      box-shadow: $card-level-shadow;
-      height: 10rem;
-      width: 90%;
-      h1 {
-        margin: 3rem 2rem .2rem 1rem;
-        float: right;
-        clear: right;
-        color: white;
-        font-size: 2.06rem;
+
+        #skills-section {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        h2.section-title {
+          @extend %section-title;
+        }
+        #skills-card {
+          display: block;
+          width: 90%;
+          margin: 0 auto;
+          padding: 1rem;
+          background-color: white;
+          box-shadow: $card-level-shadow;
+          text-align: center;
+          background-color:  white;
+          p {
+            text-align: center;
+          }
+          .skill-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .skill-icon {
+              width: 5rem;
+              height: 7.5rem;
+              margin: .5rem;
+            }
+          }
+        }
       }
-      .jumbo-line {
-        width: 10rem;
-        border-bottom: .1rem solid #D9B310;
-        float: right;
-        clear: right;
-        margin: 0rem 2rem;
+
+        #about-me-section {
+        width: 90%;
+        margin: 0 auto 3rem;
+        display: block;
+        h2.section-title {
+          @extend %section-title;
+        }
+        .about-me-card {
+          width: 90%;
+          margin: 0 auto 1.2rem;
+          padding: 1rem;
+          background-color: white;
+          box-shadow: $card-level-shadow;
+          text-align: center;
+          p#quote {
+            text-align: center;
+          }
+
+        }
       }
-      h3 {
-        margin: .3rem 2rem;
-        float: right;
-        clear: right;
-        color: white;
-        font-size: 1.28rem
+
+        .line {
+          width: 10rem;
+          margin: 1rem auto;
+          border-bottom: .1rem solid #D9B310;
+        }
+        p {
+          width: 90%;
+          margin: 1rem auto;
+          text-align: justify;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #334;
+            span.tab {
+              margin-left: 2em;
+            }
+          }
       }
-      
-    }
-    
-    #projects-section {
-      img.project-icon {
-        margin: .5rem auto -2rem;
-        width: 15rem;
-        height: 15rem;
-        display: inline-block;
-      }
-    }
-    
-    #skills-section {
-      .skill-icon {
-        float: left;
-        width: 4rem;
-        height: 6rem;
-        margin: .5rem;
-        display: inline-block;
-      }
-    }
-    
-    h2.section-title {
-      font-size: 1.5 rem;
-      padding: 0;
-      text-transform:uppercase;
-      color: #0C5179;
-      padding-left: .5rem;
-      margin-bottom: 1rem;
-      text-shadow: $card-level-shadow;
-    }
-    .line {
-      width: 10rem;
-      margin: 1rem auto;
-      border-bottom: .1rem solid #D9B310;
-    }
-    .buttons a {
-      background-color: white;
-      color: #0C5179;
-      border: .2rem solid #0C5179;
-      padding: .1rem .4rem;
-      text-decoration: none;
-      &:visited {
-        color: #0C5179;
-        border: .2rem solid #0C5179;
-        text-decoration: none;
-      }
-      &:hover {
-        border: .2rem solid #0C5179;
-        color: #0C5179;
-        text-decoration: none;
-      }
-      &:active {
-        border: .2rem solid #B82601;
-        color: #B82601;
-        text-decoration: none;
-      }
-    }
-  }
-}
-   
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-  html {
-    font-size: 16px;
-    #back-column {
-      width: 90%;
-      left: 5%;
-    }
-    
-    #projects-section {
-      img.project-icon {
-        margin: 1rem auto;
-      }
-    }
-    
-    #skills-section {
-      .skill-icon {
-        float: left;
-        width: 6rem;
-        height: 9rem;
-        margin: 1rem;
-        display: inline-block;
-      }
-    }
- 
-    h2.section-title {
-      font-size: 2rem;
-    }
-    .line {
-      width: 10rem;
     }
   }
 }
 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  html {
+    font-size: 16px;
+    body {
+      #header {
+        img#logo-pic {
+          display: block;
+        }
+      }
+      #wrapper {
+        width: 85%;
+        #marquee {
+          height: 14rem;
+          #marquee-words {
+            font-size: 1.25rem;
+            width: 20rem;
+          }
+        }
+      } 
+    }
+  }
+}
+
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
   html {
-    font-size: 12px;
-    #back-column {
-      width: 70%;
-      left: 15%;
-    }
-    
-    .header {
-      h1.logo {
-        font-size: 1.8rem;
-        padding-left: 0;
+    font-size: 16px;
+    body {
+      #wrapper {
+        width: 80%;
+        
+        #marquee {
+          height: 18rem;
+          #marquee-words {
+            font-size: 1.75rem;
+            width: 28rem;
+          }
+        }
       }
-      .header img {
-        width: 5.7rem;
-        height: 3rem;
-        margin-top: .55rem;
-      }
-      nav a:hover {
-        color: #B82601;
-        border-bottom: .2rem solid #B82601;
-      }
-    }
-  
-    .jumbotron {
-    margin: 3.7rem auto 1rem;
-    background: url(/images/gc-clock.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: $card-level-shadow;
-    height: 25rem;
-    width: 70%;
-    h1 {
-      margin: 11rem 3rem 0rem 1rem;
-      float: right;
-      clear: right;
-      color: white;
-      font-size: 5rem;
-    }
-    .jumbo-line {
-      width: 23rem;
-      border-bottom: .2rem solid #D9B310;
-      float: right;
-      clear: right;
-      margin: 0rem 3rem;
-    }
-    h3 {
-      margin: .3rem 3rem;
-      float: right;
-      clear: right;
-      color: white;
-      font-size: 2.2rem
-    }
-  }
-  
-    .buttons a:hover {
-      border: .2rem solid #B82601;
-      color: #B82601;
     }
   }
 }
@@ -240,18 +353,19 @@ $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   html {
-    font-size: 14px;
-    .header {
-      h1 {
-        font-size: 2rem;
+    font-size: 16px;
+    body {
+      #wrapper {
+        width: 75%;
+        #marquee {
+          height: 22rem;
+          #marquee-words {
+            font-size: 1.5rem;
+            width: 24rem;
+          }
+        }
       }
-      img {
-        width: 5rem;
-        height: 2.9rem;
-        margin-top: .5rem;
-        margin-bottom: .4rem;
-      }
-    } 
+    }
   }
 }
 
@@ -259,122 +373,16 @@ $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
 @media only screen and (min-width : 1200px) {
   html {
     font-size: 16px;
-    .header img {
-      margin-top: 0;
-      width: 6rem;
-      height: 4rem;
-    }
-  }
-}
-
-/*MAIN HTML/CSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
-html, body {
-  max-width: 100%;
-  overflow-x: hidden; 
-  font-family: "Oswald", sans-serif;
-  body {
-    background: #001024 !important; /* that !important overrides the bootstrap setting*/
-    .header {
-      background-color: #1D1D1D;
-      position: fixed;
-      z-index: 2;
-      width: 100%;
-      box-shadow: $header-shadow;
-      nav {
-        margin-top: 1.2rem;
-        .glyphicon {
-          margin: 0;
-          padding: 0;
-        }
-      }
-    }  
-    
-    #projects-section {
-      .project-card {
-        background-color: white;
-        box-shadow: $card-level-shadow;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 1.4rem;
-        padding: -1.5rem 1rem;
-        .project-showcase {
-          margin-bottom: 0;
-          width: 24rem;
-          padding: 1rem 0rem;
-          .project-info {
-            display: inline-block;
-            margin: 0rem .8rem .5rem .8rem;
-            h3.project-title {
-              font-size: 1.5rem;
-              margin-right: .9rem;
-              display: inline-block;
-              color: #445;
-            }
-            .buttons {
-              font-size: 1rem;
-              margin-bottom: .8rem;
-              display: inline-block;
-            }
-            a.info {
-              color: #0C5179;
-              text-decoration: underline;
-              &:visited {
-                color: #0C5179;
-              }
-              &:hover {
-                color: #B82601;
-              }
-              &:active {
-                color: #B82601;
-              }
-            }
+    body {
+      #wrapper {
+        width: 70%;
+        #marquee {
+          height: 24rem;
+          #marquee-words {
+            font-size: 2rem;
+            width: 32rem;
           }
         }
-      }
-    }
-    
-    #skills-section {
-      #skills-card {
-        background-color:  white;
-        box-shadow: $card-level-shadow;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 1.4rem;
-        padding: .8rem 2rem;
-        div.skill-icons {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-      }
-    }
-    
-    #about-me-section {
-      .about-me-card {
-        padding: .5rem;
-        background-color: white;
-        margin-bottom: 1.2rem;
-        box-shadow: $card-level-shadow;
-        text-align: center;
-        p#quote {
-          text-align: center;
-        }
-        p {
-          margin: 1rem 2rem;
-        }
-      }
-    }
-   
-    p {
-      margin: 1rem auto;
-      text-align: justify;
-      font-size: 1.1rem;
-      font-weight: 400;
-      color: #334;
-      span.tab {
-        margin-left: 2em;
       }
     }
   }

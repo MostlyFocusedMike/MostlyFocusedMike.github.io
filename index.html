@@ -1,145 +1,187 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Mike Cronin's portfolio website">
-  <meta name="author" content="Mike Cronin">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Mostly Focused Mike</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300, 400" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-  
-</head>
-<body>
-  <div id="back-column"><br /></div>
-  
-<!-- HEADER //////////////////////////////-->
-  
-  <header class="container header" >
-    <div class="row">
-      <a href="#top"><img src="images/MF-trans-Circle.png" alt="logo" class="col-sm-1 col-sm-offset-5 hidden-xs" />
-      <h1 class="col-sm-2 col-xs-7 logo">Mostly Focused</h1></a>
-      <nav class="col-sm-2 col-sm-offset-2 col-xs-5 text-center">
-        <a href="mailto:mostlyfocusedmike@gmail.com" class="hidden-sm hidden-md hidden-lg"><span class="glyphicon glyphicon-envelope"></span></a>
-        <a href="mailto:mostlyfocusedmike@gmail.com" class="hidden-xs">Email</a>
-        <a href="/Michael_Cronin_Resume_2017.pdf" target="_blank">Resume</a>
-      </nav>     
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=375, initial-scale=1">
+    <meta name="author" content="Mike Cronin">
+    <meta name="description" content="DESCRIPTION">
+    <title>TITLE</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+
+    <!-- HEADER //////////////////////////////-->
+
+    <header id="header" >
+        <a href="#top"><img src="images/MF-trans-Circle.png" alt="logo" id="logo-pic"/>
+        <h1 class="logo">Mostly Focused</h1></a>
+        <nav>
+          <a href="mailto:mostlyfocusedmike@gmail.com" class="hidden-xs">Email</a>
+          <a href="/Michael_Cronin_Resume_2017.pdf" target="_blank">Resume</a>
+        </nav>      
+    </header>
+
+    <div id="wrapper">
+      <div id="top"></div>
+
+      <!-- MARQUEE //////////////////////////////-->
+      <div id="marquee">
+        <div id="marquee-words">
+            <h1>Mike Cronin</h1>
+              <div id="marquee-line"></div>
+            <h3>WEB DESIGN PORTFOLIO</h3>
+        </div>
+    </div>
+
+      <!-- PROJECTS ////////////////////////////// -->
+      <div id="projects-section">
+
+      <h2 class="section-title">PROJECTS</h2>
+
+      <div id="project-easy-palettes">
+                <input id="toggle-easy-palettes" class= "toggle-box" type="checkbox"/>
+
+                <div class="card-view">
+                  <div class="card">
+                    <div class="front">
+                      <h2 class="project-name">Easy Palettes</h2>
+                      <img src="images/easy-palettes.jpg" class="project-icon" alt="Laptop showing the Easy-palettes App" title="Save, copy, and tweak hex code palettes without logging in"/>
+                      <div class="buttons">
+                        <a href="https://mostlyfocusedmike.github.io/easy-palettes/" target="_blank">Live link</a>
+                        <a href="https://github.com/MostlyFocusedMike/easy-palettes" target="_blank">Source Code</a>
+                      </div>
+                      <label class="toggle-label" for="toggle-easy-palettes">More Info</label>
+                      <div class="line"></div>
+                    </div>
+                    <div class="back">
+                      <h2>Easy Palettes</h2>
+                      <div class="project-showcase">
+                        <div class="project-info">
+                          <p><span class="tab">Easy Palettes is a site that makes putting hex codes into your code so much easier. Create, save, and tweak dozens of palettes, all without logging in. Built using the <a href="http://jscolor.com" target="_blank" class="info" >jscolor plugin,</a> jQuery, HTML, and SASS. <a href="https://github.com/MostlyFocusedMike/easy-palettes/blob/master/README.md" target="_blank" class="info" > See more project info</a></span></p>
+                        </div>
+                        <div class="line"></div>
+                      </div>
+                      <label class="toggle-label" for="toggle-easy-palettes">Flip Back</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+      <div id="project-grocery-tracker">
+                <input id="toggle-grocery-tracker" class= "toggle-box" type="checkbox"/>
+
+                <div class="card-view">
+                  <div class="card">
+                    <div class="front">
+                      <h2 class="project-name">Grocery Tracker</h2>
+                      <img src="images/phone-icon.jpg" class="project-icon" alt="Phone showing the Grocery Tracker App" title="So you can shop like the penny pincher you've always wanted to be."/>
+                      <div class="buttons">
+                        <a href="https://mostlyfocusedmike.github.io/grocery-tracker/" target="_blank">Live link</a>
+                        <a href="https://github.com/MostlyFocusedMike/grocery-tracker" target="_blank">Source Code</a>
+                      </div>
+                      <label class="toggle-label" for="toggle-grocery-tracker">More Info</label>
+                      <div class="line"></div>
+                    </div>
+                    <div class="back">
+                      <h2>Grocery Tracker</h2>
+                      <div class="project-showcase">
+                        <div class="project-info">
+                          <p><span class="tab">This web app helps users keep track of their grocery list and how much they're spending at the store. It's designed to be used on a mobile device. Built using pure HTML, CSS, and Javascript. <a href="https://github.com/MostlyFocusedMike/grocery-tracker/blob/master/README.md" target="_blank" class="info" > See more project info</a></span></p>
+                        </div>
+                        <div class="line"></div>
+                      </div>
+                      <label class="toggle-label" for="toggle-grocery-tracker">Flip Back</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+      <div id="project-portfolio-site">
+                <input id="toggle-portfolio-site" class= "toggle-box" type="checkbox"/>
+
+                <div class="card-view">
+                  <div class="card">
+                    <div class="front">
+                      <h2 class="project-name">Portfolio Site</h2>
+                      <img src="images/this-site-icon.jpg" class="project-icon"  alt="Laptop open to this website" title="Recursion is fun, huh?"/>
+                      <div class="buttons">
+                        <a href="https://mostlyfocusedmike.github.io" target="_blank">Live link</a>
+                        <a href="https://github.com/MostlyFocusedMike/mostlyfocusedmike.github.io" target="_blank">Source Code</a>
+                      </div>
+                      <label class="toggle-label" for="toggle-portfolio-site">More Info</label>
+                      <div class="line"></div>
+                    </div>
+                    <div class="back">
+                      <h2>Grocery Tracker</h2>
+                      <div class="project-showcase">
+                        <div class="project-info">
+                          <p><span class="tab">This site will hold all of my coding projects. I built it using Bootstrap to get a feel for the framework. Click the live link to return exactly where you are. Built using HTML and Sass. See more project info <a href="https://github.com/MostlyFocusedMike/MostlyFocusedMike.github.io/blob/master/README.md" target="_blank" class="info" > See more project info</a></span></p>
+                        </div>
+                        <div class="line"></div>
+                      </div>
+                      <label class="toggle-label" for="toggle-portfolio-site">Flip Back</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+      <div id="project-python-work-schedule">
+                <input id="toggle-python-work-schedule" class= "toggle-box" type="checkbox"/>
+
+                <div class="card-view">
+                  <div class="card">
+                    <div class="front">
+                      <h2 class="project-name">Python Work Schedule</h2>
+                      <img src="images/python-work.jpg" class="project-icon"  alt="Python program" title="Fact: code looks cooler on a black background"/>
+                      <div class="buttons">
+                        <a href="https://github.com/MostlyFocusedMike/work_schedule" target="_blank">Source Code</a>
+                      </div>
+                      <label class="toggle-label" for="toggle-python-work-schedule">More Info</label>
+                      <div class="line"></div>
+                    </div>
+                    <div class="back">
+                      <h2>Python Work Schedule</h2>
+                      <div class="project-showcase">
+                        <div class="project-info">
+                          <p><span class="tab">I needed a way to track my hours and paycheck on my phone. So I used the app <a href="http://omz-software.com/pythonista/" target="_blank" class="info">Pythonista</a> and made this work schedule program that runs on its command line. Built using Python. <a href="https://github.com/MostlyFocusedMike/work_schedule/blob/master/README.md" target="_blank" class="info">See more project info</a></span></p>
+                        </div>
+                        <div class="line"></div>
+                      </div>
+                      <label class="toggle-label" for="toggle-python-work-schedule">Flip Back</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
     </div> 
-  </header>
 
-<!-- JUMBOTRON //////////////////////////////-->
-  <div id="top"></div>
-  <section class="jumbotron">
-    <div class="row">
-          <h1>Mike Cronin</h1>
-            <div class="jumbo-line"></div>
-          <h3>WEB DESIGN PORTFOLIO</h3>
-    </div>
-  </section>
+      <!-- SKILLS SECTION //////////////////////////////-->
+      <div id="skills-section">
 
-<!-- PROJECTS ////////////////////////////// -->
-  <div class="container" id="projects-section">
-    <div class="row">
-        <div class="col-sm-2 col-sm-offset-2 col-xs-4 col-xs-offset-1"><h2 class="section-title">Projects</h2></div>
-    </div>
-    <div class="row">
+      <h2 class="section-title">SKILLS</h2>
 
-      <!--   EASY PALETTES   -->
-      <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 project-card">
-        <img src="images/easy-palettes.jpg" class="project-icon" alt="Laptop showing the Easy-palettes App" title="Save, copy, and tweak hex code palettes without logging in"/>
-        <div class="project-showcase">
-          <div class="project-info">
-            <h3 class="project-title">Easy-Palettes</h3>
-            <div class="buttons">
-              <a href="https://mostlyfocusedmike.github.io/easy-palettes/" target="_blank">Live link</a>
-              <a href="https://github.com/MostlyFocusedMike/easy-palettes" target="_blank">Source Code</a>
-            </div>
-            <p><span class="tab">Easy-Palettes is a site that makes putting hex codes into your website much easier. Create, save, and tweak dozens of palettes, all without logging in. Built using the <a href="http://jscolor.com" target="_blank" class="info" >jscolor plugin,</a> jQuery, HTML, and SASS. <a href="https://github.com/MostlyFocusedMike/easy-palettes/blob/master/README.md" target="_blank" class="info" > See more project info</a></span></p>
-          </div>
+        <div id="skills-card">
+          <p>Here are all the languages and programs I currently use: </p>
+          <div class="skill-icons">
+            <img src="images/html-logo.png" class="skill-icon" alt="html logo" title="HTML is the backbone of the web."/>
+            <img src="images/css-logo.png" class="skill-icon" alt="css logo" title="CSS makes HTML not look like it's 1992."/>
+            <img src="images/javascript-logo.png" class="skill-icon" alt="javascript logo" title="JavaScript is code for browsers. It has nothing to do with Java becuase life isn't fair."/>
+            <img src="images/jquery-logo.png" class="skill-icon" alt="jquery logo"  title="jQuery makes it much faster to code in JavaScript"/>
+            <img src="images/bootstrap-logo.png" class="skill-icon" alt="bootstrap logo" title="Bootstrap makes it faster to use CSS. Allegedly."/>
+            <img src="images/git-logo.png" class="skill-icon" alt="git logo" title="Git is like hitting the save button on steroids."/>
+            <img src="images/python-logo.png" class="skill-icon" alt="python logo" title="Python is a coding language that decided to be written in English."/>
+            <img src="images/illustrator-logo.png" class="skill-icon" alt="illustrator logo" title="Illustrator is a graphics program that's great for things like this very icon."/>
+            <img src="images/photoshop-logo.png" class="skill-icon" alt="photoshop logo" title="You know what photoshop is."/>
+            <img src="images/premiere-logo.png" class="skill-icon" alt="premiere logo" title="Premiere makes videos but apparently won't make you a successful late night YouTube channel."/>
+          </div>  
           <div class="line"></div>
-        </div>
-      </div>
-
-      <!--   GROCERY TRACKER   -->
-      <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 project-card">
-        <img src="images/phone-icon.jpg" class="project-icon" alt="Phone showing the Grocery Tracker App" title="So you can shop like the penny pincher you've always wanted to be."/>
-        <div class="project-showcase">
-          <div class="project-info">
-            <h3 class="project-title">Grocery Tracker</h3>
-            <div class="buttons">
-              <a href="https://mostlyfocusedmike.github.io/grocery-tracker/" target="_blank">Live link</a>
-              <a href="https://github.com/MostlyFocusedMike/grocery-tracker" target="_blank">Source Code</a>
-            </div>
-            <p><span class="tab">This web app helps users keep track of their grocery list and how much they're spending at the store. It's designed to be used on a mobile device. Built using pure HTML, CSS, and Javascript. <a href="https://github.com/MostlyFocusedMike/grocery-tracker/blob/master/README.md" target="_blank" class="info" > See more project info</a></span></p>
-          </div>
-          <div class="line"></div>
-        </div>
-      </div>
-      
-      <!--  PORTFOLIO SITE   -->
-      <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 project-card">
-        <img src="images/this-site-icon.jpg" class="project-icon"  alt="Laptop open to this website" title="Recursion is fun, huh?"/>
-        <div class="project-showcase">
-          <div class="project-info">
-              <h3 class="project-title">Portfolio Site</h3>
-              <div class="buttons">
-                <a href="https://mostlyfocusedmike.github.io" target="_blank">Live link</a>
-                <a href="https://github.com/MostlyFocusedMike/MostlyFocusedMike.github.io" target="_blank">Source Code</a>
-            </div>
-            <p><span class="tab">This site will hold all of my coding projects. I built it using Bootstrap to get a feel for the framework. Click the live link to return exactly where you are. Built using HTML, CSS, and Bootstrap. <a href="https://github.com/MostlyFocusedMike/MostlyFocusedMike.github.io/blob/master/README.md" target="_blank" class="info">See more project info</a></span></p>
-          </div>
-          <div class="line"></div>
-        </div>
-      </div>
-      
-      <!-- PYTHON WORK SCHEDULE -->
-      <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 project-card">
-        <img src="images/python-work.jpg" class="project-icon"  alt="Python program" title="Fact: code looks cooler on a black background"/>
-        <div class="project-showcase">
-          <div class="project-info">
-            
-              <h3 class="project-title">Work Schedule</h3>
-              <div class="buttons">
-                <a href="https://github.com/MostlyFocusedMike/work_schedule" target="_blank">Source Code</a>
-            </div>
-            <p><span class="tab">I needed a way to track my hours and paycheck on my phone. So I used the app <a href="http://omz-software.com/pythonista/" target="_blank" class="info">Pythonista</a> and made this work schedule program that runs on its command line. Built using Python. <a href="https://github.com/MostlyFocusedMike/work_schedule/blob/master/README.md" target="_blank" class="info">See more project info</a></span></p>
-          </div>
-          <div class="line"></div>
-        </div>
       </div>
     </div>
-  </div> 
- 
-<!-- SKILLS SECTION //////////////////////////////-->
-  <div class="container" id="skills-section">
-    <div class="row">
-        <div class="col-sm-2 col-sm-offset-2 col-xs-12 col-xs-offset-1"><h2 class="section-title">skills</h2></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" id="skills-card">
-        <p>Here are all the languages and programs I currently use: </p>
-        <div class="skill-icons">
-          <img src="images/html-logo.png" class="skill-icon" alt="html logo" title="HTML is the backbone of the web."/>
-          <img src="images/css-logo.png" class="skill-icon" alt="css logo" title="CSS makes HTML not look like it's 1992."/>
-          <img src="images/javascript-logo.png" class="skill-icon" alt="javascript logo" title="JavaScript is code for browsers. It has nothing to do with Java becuase life isn't fair."/>
-          <img src="images/jquery-logo.png" class="skill-icon" alt="jquery logo"  title="jQuery makes it much faster to code in JavaScript"/>
-          <img src="images/bootstrap-logo.png" class="skill-icon" alt="bootstrap logo" title="Bootstrap makes it faster to use CSS. Allegedly."/>
-          <img src="images/git-logo.png" class="skill-icon" alt="git logo" title="Git is like hitting the save button on steroids."/>
-          <img src="images/python-logo.png" class="skill-icon" alt="python logo" title="Python is a coding language that decided to be written in English."/>
-          <img src="images/illustrator-logo.png" class="skill-icon" alt="illustrator logo" title="Illustrator is a graphics program that's great for things like this very icon."/>
-          <img src="images/photoshop-logo.png" class="skill-icon" alt="photoshop logo" title="You know what photoshop is."/>
-          <img src="images/premiere-logo.png" class="skill-icon" alt="premiere logo" title="Premiere makes videos but apparently won't make you a successful late night YouTube channel."/>
-        </div>  
-        <div class="line"></div>
-    </div>
-    </div>
-  </div>
 
-<!-- ABOUT ME SECTION //////////////////////////////-->
-  <div class="container" id="about-me-section">
+      <!-- ABOUT ME SECTION //////////////////////////////-->
+      <div class="container" id="about-me-section">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-2 col-xs-12 col-xs-offset-1"><h2 class="section-title">About Me</h2></div>
+        <div class="col-sm-6 col-sm-offset-2 col-xs-12 col-xs-offset-1"><h2 class="section-title">ABOUT</h2></div>
     </div>
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 about-me-card">
@@ -151,9 +193,10 @@
       </div>
     </div>
   </div>
- 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+  </div><!-- end of wrapper -->
   <script src="js/script.js"></script>
+    
   </body>
 </html>
+
