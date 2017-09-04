@@ -42,8 +42,8 @@
     }
     &:hover {
       color: white;
-      border: .2rem solid #1277B1;
-      background-color: #1277B1;
+      border: .2rem solid #0C5179;
+      background-color: #0C5179;
       text-decoration: none;
     }
     &:active {
@@ -112,13 +112,13 @@
               text-decoration: none;
             }
             &:hover {
-              color: #FFD213;
-              border-bottom: .1rem solid #FFD213;
+              color: white;
+              border-bottom: .1rem solid white;
               text-decoration: none;
             }
             &:active {
-              color: white;
-              border-bottom: .1rem solid white;
+              color: #FFD213;
+              border-bottom: .1rem solid #FFD213;
               text-decoration: none;
             }
           }
@@ -221,8 +221,8 @@
                     text-decoration: none;
                   }
                   &:hover {
-                    border: .2rem solid #1277B1;
-                    color: #1277B1;
+                    border: .2rem solid #0C5179;
+                    color: #0C5179;
                     text-decoration: none;
                   }
                   &:active {
@@ -411,7 +411,7 @@
 }
 
 
-html.has-touch #header div#menu {
+html.no-touch div#menu {
   float: right;
   padding-right: 1rem;
   margin-top: 1.2rem;
@@ -428,8 +428,8 @@ html.has-touch #header div#menu {
       text-decoration: none;
     }
     &:hover {
-      color: white;
-      border-bottom: .1rem solid white;
+      color: #1277B1;
+      border-bottom: .1rem solid #1277B1;
       text-decoration: none;
     }
     &:active {
@@ -440,7 +440,7 @@ html.has-touch #header div#menu {
   }
 }
 
-html.has-touch #wrapper #projects-section .buttons {
+html.no-touch .buttons {
   margin-bottom: 1.25rem;
   a {
     background-color: white;
@@ -454,8 +454,8 @@ html.has-touch #wrapper #projects-section .buttons {
       text-decoration: none;
     }
     &:hover {
-      border: .2rem solid #0C5179;
-      color: #0C5179;
+      border: .2rem solid #1277B1;
+      color: #1277B1;
       text-decoration: none;
     }
     &:active {
@@ -466,7 +466,7 @@ html.has-touch #wrapper #projects-section .buttons {
   }
 }
 
-html.has-touch .toggle-label {
+html.no-touch .toggle-label {
   width: 80px;
   height: 20px;
   border: .2rem solid #0C5179;
@@ -485,8 +485,8 @@ html.has-touch .toggle-label {
     }
     &:hover {
       color: white;
-      border: .2rem solid #0C5179;
-      background-color: #0C5179;
+      border: .2rem solid #1277B1;
+      background-color: #1277B1;
       text-decoration: none;
     }
     &:active {
@@ -496,3 +496,4 @@ html.has-touch .toggle-label {
       text-decoration: none;
     }
 }
+

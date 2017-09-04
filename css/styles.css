@@ -37,8 +37,8 @@
       text-decoration: none; }
     html body #wrapper #projects-section .card-view .card .front .toggle-label:hover, body body #wrapper #projects-section .card-view .card .front .toggle-label:hover, html body #wrapper #projects-section .card-view .card .back .toggle-label:hover, body body #wrapper #projects-section .card-view .card .back .toggle-label:hover {
       color: white;
-      border: .2rem solid #1277B1;
-      background-color: #1277B1;
+      border: .2rem solid #0C5179;
+      background-color: #0C5179;
       text-decoration: none; }
     html body #wrapper #projects-section .card-view .card .front .toggle-label:active, body body #wrapper #projects-section .card-view .card .front .toggle-label:active, html body #wrapper #projects-section .card-view .card .back .toggle-label:active, body body #wrapper #projects-section .card-view .card .back .toggle-label:active {
       color: white;
@@ -101,12 +101,12 @@
               border-bottom: .1rem solid white;
               text-decoration: none; }
             html body #header div#menu a:hover, body body #header div#menu a:hover {
-              color: #FFD213;
-              border-bottom: .1rem solid #FFD213;
-              text-decoration: none; }
-            html body #header div#menu a:active, body body #header div#menu a:active {
               color: white;
               border-bottom: .1rem solid white;
+              text-decoration: none; }
+            html body #header div#menu a:active, body body #header div#menu a:active {
+              color: #FFD213;
+              border-bottom: .1rem solid #FFD213;
               text-decoration: none; }
       html body #wrapper, body body #wrapper {
         width: 90%;
@@ -185,8 +185,8 @@
                       border: .2rem solid #0C5179;
                       text-decoration: none; }
                     html body #wrapper #projects-section .card-view .card .front .buttons a:hover, body body #wrapper #projects-section .card-view .card .front .buttons a:hover {
-                      border: .2rem solid #1277B1;
-                      color: #1277B1;
+                      border: .2rem solid #0C5179;
+                      color: #0C5179;
                       text-decoration: none; }
                     html body #wrapper #projects-section .card-view .card .front .buttons a:active, body body #wrapper #projects-section .card-view .card .front .buttons a:active {
                       border: .2rem solid #FFD213;
@@ -293,52 +293,52 @@
         html body #wrapper #marquee #marquee-words {
           font-size: 2rem;
           width: 32rem; } }
-html.has-touch #header div#menu {
+html.no-touch div#menu {
   float: right;
   padding-right: 1rem;
   margin-top: 1.2rem; }
-  html.has-touch #header div#menu a {
+  html.no-touch div#menu a {
     font-size: 1rem;
     color: white;
     border-bottom: .1rem solid white;
     padding: .1rem .25rem;
     margin: 0 .1rem;
     text-decoration: none; }
-    html.has-touch #header div#menu a:visited {
+    html.no-touch div#menu a:visited {
       color: white;
       border-bottom: .1rem solid white;
       text-decoration: none; }
-    html.has-touch #header div#menu a:hover {
-      color: white;
-      border-bottom: .1rem solid white;
+    html.no-touch div#menu a:hover {
+      color: #1277B1;
+      border-bottom: .1rem solid #1277B1;
       text-decoration: none; }
-    html.has-touch #header div#menu a:active {
+    html.no-touch div#menu a:active {
       color: #FFD213;
       border-bottom: .1rem solid #FFD213;
       text-decoration: none; }
 
-html.has-touch #wrapper #projects-section .buttons {
+html.no-touch .buttons {
   margin-bottom: 1.25rem; }
-  html.has-touch #wrapper #projects-section .buttons a {
+  html.no-touch .buttons a {
     background-color: white;
     color: #0C5179;
     border: .2rem solid #0C5179;
     padding: .1rem .4rem;
     text-decoration: none; }
-    html.has-touch #wrapper #projects-section .buttons a:visited {
+    html.no-touch .buttons a:visited {
       color: #0C5179;
       border: .2rem solid #0C5179;
       text-decoration: none; }
-    html.has-touch #wrapper #projects-section .buttons a:hover {
-      border: .2rem solid #0C5179;
-      color: #0C5179;
+    html.no-touch .buttons a:hover {
+      border: .2rem solid #1277B1;
+      color: #1277B1;
       text-decoration: none; }
-    html.has-touch #wrapper #projects-section .buttons a:active {
+    html.no-touch .buttons a:active {
       border: .2rem solid #FFD213;
       color: #FFD213;
       text-decoration: none; }
 
-html.has-touch .toggle-label {
+html.no-touch .toggle-label {
   width: 80px;
   height: 20px;
   border: .2rem solid #0C5179;
@@ -349,17 +349,17 @@ html.has-touch .toggle-label {
   text-align: center;
   color: white;
   margin: 1rem auto; }
-  html.has-touch .toggle-label:visited {
+  html.no-touch .toggle-label:visited {
     color: white;
     border: .2rem solid #0C5179;
     background-color: #0C5179;
     text-decoration: none; }
-  html.has-touch .toggle-label:hover {
+  html.no-touch .toggle-label:hover {
     color: white;
-    border: .2rem solid #0C5179;
-    background-color: #0C5179;
+    border: .2rem solid #1277B1;
+    background-color: #1277B1;
     text-decoration: none; }
-  html.has-touch .toggle-label:active {
+  html.no-touch .toggle-label:active {
     color: white;
     border: .2rem solid #FFD213;
     background-color: #FFD213;
