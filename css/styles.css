@@ -59,7 +59,6 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: helvetica, sans-serif;
     max-width: 100%;
     overflow-x: hidden;
     font-family: "Oswald", sans-serif; }
@@ -80,7 +79,7 @@
           float: left;
           margin: .8rem 0rem .5rem .5rem; }
         html body #header h1.logo, body body #header h1.logo {
-          font-family: "Oswald";
+          font-family: "Oswald", helvetica, sans-serif;
           margin: .75rem 0rem 0rem .5rem;
           padding: 0;
           color: #fbfbfb;
@@ -294,26 +293,26 @@
         html body #wrapper #marquee #marquee-words {
           font-size: 2rem;
           width: 32rem; } }
-html.has-touch div#menu {
+html.has-touch #header div#menu {
   float: right;
   padding-right: 1rem;
   margin-top: 1.2rem; }
-  html.has-touch div#menu a {
+  html.has-touch #header div#menu a {
     font-size: 1rem;
     color: white;
     border-bottom: .1rem solid white;
     padding: .1rem .25rem;
     margin: 0 .1rem;
     text-decoration: none; }
-    html.has-touch div#menu a:visited {
+    html.has-touch #header div#menu a:visited {
       color: white;
       border-bottom: .1rem solid white;
       text-decoration: none; }
-    html.has-touch div#menu a:hover {
+    html.has-touch #header div#menu a:hover {
       color: white;
       border-bottom: .1rem solid white;
       text-decoration: none; }
-    html.has-touch div#menu a:active {
+    html.has-touch #header div#menu a:active {
       color: #FFD213;
       border-bottom: .1rem solid #FFD213;
       text-decoration: none; }
