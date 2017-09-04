@@ -46,7 +46,7 @@
       background-color: #1277B1;
       text-decoration: none; }
 
-  html body #wrapper #projects-section h2.section-title, body body #wrapper #projects-section h2.section-title, html body #wrapper #skills-section h2.section-title, body body #wrapper #skills-section h2.section-title, html body #wrapper #about-me-section h2.section-title, body body #wrapper #about-me-section h2.section-title {
+  html body #wrapper #about-me-section h2.section-title, body body #wrapper #about-me-section h2.section-title, html body #wrapper #projects-section h2.section-title, body body #wrapper #projects-section h2.section-title, html body #wrapper #skills-section h2.section-title, body body #wrapper #skills-section h2.section-title {
     display: block;
     width: 100%;
     margin-bottom: .25rem;
@@ -145,6 +145,19 @@
               margin: 0;
               color: white;
               font-size: 125%; }
+        html body #wrapper #about-me-section, body body #wrapper #about-me-section {
+          width: 90%;
+          margin: 0 auto;
+          display: block; }
+          html body #wrapper #about-me-section .about-me-card, body body #wrapper #about-me-section .about-me-card {
+            width: 90%;
+            margin: 0 auto 1.2rem;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+            text-align: center; }
+            html body #wrapper #about-me-section .about-me-card p#quote, body body #wrapper #about-me-section .about-me-card p#quote {
+              text-align: center; }
         html body #wrapper .toggle-box, body body #wrapper .toggle-box {
           display: none; }
           html body #wrapper .toggle-box:checked ~ .card-view > .card, body body #wrapper .toggle-box:checked ~ .card-view > .card {
@@ -200,7 +213,7 @@
                   font-size: 1rem; }
         html body #wrapper #skills-section, body body #wrapper #skills-section {
           width: 90%;
-          margin: 0 auto;
+          margin: 0 auto 3rem;
           display: block; }
           html body #wrapper #skills-section #skills-card, body body #wrapper #skills-section #skills-card {
             display: block;
@@ -221,19 +234,6 @@
                 width: 5rem;
                 height: 7.5rem;
                 margin: .5rem; }
-        html body #wrapper #about-me-section, body body #wrapper #about-me-section {
-          width: 90%;
-          margin: 0 auto 3rem;
-          display: block; }
-          html body #wrapper #about-me-section .about-me-card, body body #wrapper #about-me-section .about-me-card {
-            width: 90%;
-            margin: 0 auto 1.2rem;
-            padding: 1rem;
-            background-color: white;
-            box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-            text-align: center; }
-            html body #wrapper #about-me-section .about-me-card p#quote, body body #wrapper #about-me-section .about-me-card p#quote {
-              text-align: center; }
         html body #wrapper .line, body body #wrapper .line {
           width: 10rem;
           margin: 1rem auto;
