@@ -317,41 +317,52 @@ html.has-touch #header div#menu {
       border-bottom: .1rem solid #FFD213;
       text-decoration: none; }
 
-html.has-touch .buttons {
+html.has-touch #wrapper #projects-section .buttons {
   margin-bottom: 1.25rem; }
-  html.has-touch .buttons a {
+  html.has-touch #wrapper #projects-section .buttons a {
     background-color: white;
     color: #0C5179;
     border: .2rem solid #0C5179;
     padding: .1rem .4rem;
     text-decoration: none; }
-    html.has-touch .buttons a:visited {
+    html.has-touch #wrapper #projects-section .buttons a:visited {
       color: #0C5179;
       border: .2rem solid #0C5179;
       text-decoration: none; }
-    html.has-touch .buttons a:hover {
+    html.has-touch #wrapper #projects-section .buttons a:hover {
       border: .2rem solid #0C5179;
       color: #0C5179;
       text-decoration: none; }
-    html.has-touch .buttons a:active {
+    html.has-touch #wrapper #projects-section .buttons a:active {
       border: .2rem solid #FFD213;
       color: #FFD213;
       text-decoration: none; }
 
-html.has-touch .toggle-label:visited {
-  color: white;
+html.has-touch .toggle-label {
+  width: 80px;
+  height: 20px;
   border: .2rem solid #0C5179;
-  background-color: #0C5179;
-  text-decoration: none; }
-html.has-touch .toggle-label:hover {
+  padding: .1rem .4rem .4rem;
+  background: #0C5179;
+  cursor: pointer;
+  display: block;
+  text-align: center;
   color: white;
-  border: .2rem solid #0C5179;
-  background-color: #0C5179;
-  text-decoration: none; }
-html.has-touch .toggle-label:active {
-  color: white;
-  border: .2rem solid #FFD213;
-  background-color: #FFD213;
-  text-decoration: none; }
+  margin: 1rem auto; }
+  html.has-touch .toggle-label:visited {
+    color: white;
+    border: .2rem solid #0C5179;
+    background-color: #0C5179;
+    text-decoration: none; }
+  html.has-touch .toggle-label:hover {
+    color: white;
+    border: .2rem solid #0C5179;
+    background-color: #0C5179;
+    text-decoration: none; }
+  html.has-touch .toggle-label:active {
+    color: white;
+    border: .2rem solid #FFD213;
+    background-color: #FFD213;
+    text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */

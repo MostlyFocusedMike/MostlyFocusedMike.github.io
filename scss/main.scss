@@ -440,7 +440,7 @@ html.has-touch #header div#menu {
   }
 }
 
-html.has-touch .buttons {
+html.has-touch #wrapper #projects-section .buttons {
   margin-bottom: 1.25rem;
   a {
     background-color: white;
@@ -467,6 +467,16 @@ html.has-touch .buttons {
 }
 
 html.has-touch .toggle-label {
+  width: 80px;
+  height: 20px;
+  border: .2rem solid #0C5179;
+  padding: .1rem .4rem .4rem;
+  background: #0C5179;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  color: white;
+  margin: 1rem auto;
   &:visited {
       color: white;
       border: .2rem solid #0C5179;
