@@ -26,13 +26,32 @@
   %toggle-label {
     width: 80px;
     height: 20px;
-    padding: 10px;
-    background: green;
+    border: .2rem solid #0C5179;
+    padding: .1rem .4rem .4rem;
+    background: #0C5179;
     cursor: pointer;
     display: block;
     text-align: center;
     color: white;
     margin: 1rem auto;
+    &:visited {
+      color: white;
+      border: .2rem solid #0C5179;
+      background-color: #0C5179;
+      text-decoration: none;
+    }
+    &:hover {
+      color: white;
+      border: .2rem solid #1277B1;
+      background-color: #1277B1;
+      text-decoration: none;
+    }
+    &:active {
+      color: white;
+      border: .2rem solid #FFD213;
+      background-color: #FFD213;
+      text-decoration: none;
+    }
   }
   %section-title {
     display: block;
@@ -77,7 +96,7 @@
           font-size: 1.75rem;
           float: left;
         } 
-        nav {
+        div#menu {
           float: right;
           padding-right: 1rem;
           margin-top: 1.2rem;
@@ -90,17 +109,17 @@
             text-decoration: none;
             &:visited {
               color: white;
-              border-bottom: .2rem solid white;
+              border-bottom: .1rem solid white;
               text-decoration: none;
             }
             &:hover {
-              color: white;
-              border-bottom: .2rem solid white;
+              color: #FFD213;
+              border-bottom: .1rem solid #FFD213;
               text-decoration: none;
             }
             &:active {
-              color: #B82601;
-              border-bottom: .2rem solid #B82601;
+              color: white;
+              border-bottom: .1rem solid white;
               text-decoration: none;
             }
           }
@@ -137,7 +156,7 @@
             }
             #marquee-line {
               width: 50%;
-              border-bottom: .1rem solid #D9B310;
+              border-bottom: .1rem solid #FFD213;
               margin: 0rem;
               position: absolute;
               right: 0;
@@ -189,26 +208,29 @@
                 height: 12rem;
                 display: block;
               }
-              .buttons a {
-                background-color: white;
-                color: #0C5179;
-                border: .2rem solid #0C5179;
-                padding: .1rem .4rem;
-                text-decoration: none;
-                &:visited {
+              .buttons {
+                margin-bottom: 1.25rem;
+                a {
+                  background-color: white;
                   color: #0C5179;
                   border: .2rem solid #0C5179;
+                  padding: .1rem .4rem;
                   text-decoration: none;
-                }
-                &:hover {
-                  border: .2rem solid #0C5179;
-                  color: #0C5179;
-                  text-decoration: none;
-                }
-                &:active {
-                  border: .2rem solid #B82601;
-                  color: #B82601;
-                  text-decoration: none;
+                  &:visited {
+                    color: #0C5179;
+                    border: .2rem solid #0C5179;
+                    text-decoration: none;
+                  }
+                  &:hover {
+                    border: .2rem solid #1277B1;
+                    color: #1277B1;
+                    text-decoration: none;
+                  }
+                  &:active {
+                    border: .2rem solid #FFD213;
+                    color: #FFD213;
+                    text-decoration: none;
+                  }
                 }
               }
               .toggle-label {
@@ -287,7 +309,7 @@
         .line {
           width: 10rem;
           margin: 1rem auto;
-          border-bottom: .1rem solid #D9B310;
+          border-bottom: .1rem solid #FFD213;
         }
         p {
           width: 90%;
@@ -367,6 +389,7 @@
       }
     }
   }
+  
 }
 
 /* Large Devices, Wide Screens */
@@ -386,4 +409,80 @@
       }
     }
   }
+}
+
+
+html.has-touch div#menu {
+  float: right;
+  padding-right: 1rem;
+  margin-top: 1.2rem;
+  a {
+    font-size: 1rem;
+    color: white;
+    border-bottom: .1rem solid white;
+    padding: .1rem .25rem;
+    margin: 0 .1rem;
+    text-decoration: none;
+    &:visited {
+      color: white;
+      border-bottom: .1rem solid white;
+      text-decoration: none;
+    }
+    &:hover {
+      color: white;
+      border-bottom: .1rem solid white;
+      text-decoration: none;
+    }
+    &:active {
+      color: #FFD213;
+      border-bottom: .1rem solid #FFD213;
+      text-decoration: none;
+    }
+  }
+}
+html.has-touch .buttons {
+  margin-bottom: 1.25rem;
+  a {
+    background-color: white;
+    color: #0C5179;
+    border: .2rem solid #0C5179;
+    padding: .1rem .4rem;
+    text-decoration: none;
+    &:visited {
+      color: #0C5179;
+      border: .2rem solid #0C5179;
+      text-decoration: none;
+    }
+    &:hover {
+      border: .2rem solid #0C5179;
+      color: #0C5179;
+      text-decoration: none;
+    }
+    &:active {
+      border: .2rem solid #FFD213;
+      color: #FFD213;
+      text-decoration: none;
+    }
+  }
+}
+
+html.has-touch .toggle-label {
+  &:visited {
+      color: white;
+      border: .2rem solid #0C5179;
+      background-color: #0C5179;
+      text-decoration: none;
+    }
+    &:hover {
+      color: white;
+      border: .2rem solid #0C5179;
+      background-color: #0C5179;
+      text-decoration: none;
+    }
+    &:active {
+      color: white;
+      border: .2rem solid #FFD213;
+      background-color: #FFD213;
+      text-decoration: none;
+    }
 }

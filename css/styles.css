@@ -22,13 +22,29 @@
   html body #wrapper #projects-section .card-view .card .front .toggle-label, body body #wrapper #projects-section .card-view .card .front .toggle-label, html body #wrapper #projects-section .card-view .card .back .toggle-label, body body #wrapper #projects-section .card-view .card .back .toggle-label {
     width: 80px;
     height: 20px;
-    padding: 10px;
-    background: green;
+    border: .2rem solid #0C5179;
+    padding: .1rem .4rem .4rem;
+    background: #0C5179;
     cursor: pointer;
     display: block;
     text-align: center;
     color: white;
     margin: 1rem auto; }
+    html body #wrapper #projects-section .card-view .card .front .toggle-label:visited, body body #wrapper #projects-section .card-view .card .front .toggle-label:visited, html body #wrapper #projects-section .card-view .card .back .toggle-label:visited, body body #wrapper #projects-section .card-view .card .back .toggle-label:visited {
+      color: white;
+      border: .2rem solid #0C5179;
+      background-color: #0C5179;
+      text-decoration: none; }
+    html body #wrapper #projects-section .card-view .card .front .toggle-label:hover, body body #wrapper #projects-section .card-view .card .front .toggle-label:hover, html body #wrapper #projects-section .card-view .card .back .toggle-label:hover, body body #wrapper #projects-section .card-view .card .back .toggle-label:hover {
+      color: white;
+      border: .2rem solid #1277B1;
+      background-color: #1277B1;
+      text-decoration: none; }
+    html body #wrapper #projects-section .card-view .card .front .toggle-label:active, body body #wrapper #projects-section .card-view .card .front .toggle-label:active, html body #wrapper #projects-section .card-view .card .back .toggle-label:active, body body #wrapper #projects-section .card-view .card .back .toggle-label:active {
+      color: white;
+      border: .2rem solid #FFD213;
+      background-color: #FFD213;
+      text-decoration: none; }
 
   html body #wrapper #projects-section h2.section-title, body body #wrapper #projects-section h2.section-title, html body #wrapper #skills-section h2.section-title, body body #wrapper #skills-section h2.section-title, html body #wrapper #about-me-section h2.section-title, body body #wrapper #about-me-section h2.section-title {
     display: block;
@@ -70,28 +86,28 @@
           color: #fbfbfb;
           font-size: 1.75rem;
           float: left; }
-        html body #header nav, body body #header nav {
+        html body #header div#menu, body body #header div#menu {
           float: right;
           padding-right: 1rem;
           margin-top: 1.2rem; }
-          html body #header nav a, body body #header nav a {
+          html body #header div#menu a, body body #header div#menu a {
             font-size: 1rem;
             color: white;
             border-bottom: .1rem solid white;
             padding: .1rem .25rem;
             margin: 0 .1rem;
             text-decoration: none; }
-            html body #header nav a:visited, body body #header nav a:visited {
+            html body #header div#menu a:visited, body body #header div#menu a:visited {
               color: white;
-              border-bottom: .2rem solid white;
+              border-bottom: .1rem solid white;
               text-decoration: none; }
-            html body #header nav a:hover, body body #header nav a:hover {
+            html body #header div#menu a:hover, body body #header div#menu a:hover {
+              color: #FFD213;
+              border-bottom: .1rem solid #FFD213;
+              text-decoration: none; }
+            html body #header div#menu a:active, body body #header div#menu a:active {
               color: white;
-              border-bottom: .2rem solid white;
-              text-decoration: none; }
-            html body #header nav a:active, body body #header nav a:active {
-              color: #B82601;
-              border-bottom: .2rem solid #B82601;
+              border-bottom: .1rem solid white;
               text-decoration: none; }
       html body #wrapper, body body #wrapper {
         width: 90%;
@@ -122,7 +138,7 @@
               font-size: 200%; }
             html body #wrapper #marquee #marquee-words #marquee-line, body body #wrapper #marquee #marquee-words #marquee-line {
               width: 50%;
-              border-bottom: .1rem solid #D9B310;
+              border-bottom: .1rem solid #FFD213;
               margin: 0rem;
               position: absolute;
               right: 0; }
@@ -157,24 +173,26 @@
                   width: 12rem;
                   height: 12rem;
                   display: block; }
-                html body #wrapper #projects-section .card-view .card .front .buttons a, body body #wrapper #projects-section .card-view .card .front .buttons a {
-                  background-color: white;
-                  color: #0C5179;
-                  border: .2rem solid #0C5179;
-                  padding: .1rem .4rem;
-                  text-decoration: none; }
-                  html body #wrapper #projects-section .card-view .card .front .buttons a:visited, body body #wrapper #projects-section .card-view .card .front .buttons a:visited {
+                html body #wrapper #projects-section .card-view .card .front .buttons, body body #wrapper #projects-section .card-view .card .front .buttons {
+                  margin-bottom: 1.25rem; }
+                  html body #wrapper #projects-section .card-view .card .front .buttons a, body body #wrapper #projects-section .card-view .card .front .buttons a {
+                    background-color: white;
                     color: #0C5179;
                     border: .2rem solid #0C5179;
+                    padding: .1rem .4rem;
                     text-decoration: none; }
-                  html body #wrapper #projects-section .card-view .card .front .buttons a:hover, body body #wrapper #projects-section .card-view .card .front .buttons a:hover {
-                    border: .2rem solid #0C5179;
-                    color: #0C5179;
-                    text-decoration: none; }
-                  html body #wrapper #projects-section .card-view .card .front .buttons a:active, body body #wrapper #projects-section .card-view .card .front .buttons a:active {
-                    border: .2rem solid #B82601;
-                    color: #B82601;
-                    text-decoration: none; }
+                    html body #wrapper #projects-section .card-view .card .front .buttons a:visited, body body #wrapper #projects-section .card-view .card .front .buttons a:visited {
+                      color: #0C5179;
+                      border: .2rem solid #0C5179;
+                      text-decoration: none; }
+                    html body #wrapper #projects-section .card-view .card .front .buttons a:hover, body body #wrapper #projects-section .card-view .card .front .buttons a:hover {
+                      border: .2rem solid #1277B1;
+                      color: #1277B1;
+                      text-decoration: none; }
+                    html body #wrapper #projects-section .card-view .card .front .buttons a:active, body body #wrapper #projects-section .card-view .card .front .buttons a:active {
+                      border: .2rem solid #FFD213;
+                      color: #FFD213;
+                      text-decoration: none; }
               html body #wrapper #projects-section .card-view .card .back, body body #wrapper #projects-section .card-view .card .back {
                 transform: rotateY(180deg); }
                 html body #wrapper #projects-section .card-view .card .back p, body body #wrapper #projects-section .card-view .card .back p {
@@ -220,7 +238,7 @@
         html body #wrapper .line, body body #wrapper .line {
           width: 10rem;
           margin: 1rem auto;
-          border-bottom: .1rem solid #D9B310; }
+          border-bottom: .1rem solid #FFD213; }
         html body #wrapper p, body body #wrapper p {
           width: 90%;
           margin: 1rem auto;
@@ -276,5 +294,65 @@
         html body #wrapper #marquee #marquee-words {
           font-size: 2rem;
           width: 32rem; } }
+html.has-touch div#menu {
+  float: right;
+  padding-right: 1rem;
+  margin-top: 1.2rem; }
+  html.has-touch div#menu a {
+    font-size: 1rem;
+    color: white;
+    border-bottom: .1rem solid white;
+    padding: .1rem .25rem;
+    margin: 0 .1rem;
+    text-decoration: none; }
+    html.has-touch div#menu a:visited {
+      color: white;
+      border-bottom: .1rem solid white;
+      text-decoration: none; }
+    html.has-touch div#menu a:hover {
+      color: white;
+      border-bottom: .1rem solid white;
+      text-decoration: none; }
+    html.has-touch div#menu a:active {
+      color: #FFD213;
+      border-bottom: .1rem solid #FFD213;
+      text-decoration: none; }
+
+html.has-touch .buttons {
+  margin-bottom: 1.25rem; }
+  html.has-touch .buttons a {
+    background-color: white;
+    color: #0C5179;
+    border: .2rem solid #0C5179;
+    padding: .1rem .4rem;
+    text-decoration: none; }
+    html.has-touch .buttons a:visited {
+      color: #0C5179;
+      border: .2rem solid #0C5179;
+      text-decoration: none; }
+    html.has-touch .buttons a:hover {
+      border: .2rem solid #0C5179;
+      color: #0C5179;
+      text-decoration: none; }
+    html.has-touch .buttons a:active {
+      border: .2rem solid #FFD213;
+      color: #FFD213;
+      text-decoration: none; }
+
+html.has-touch .toggle-label:visited {
+  color: white;
+  border: .2rem solid #0C5179;
+  background-color: #0C5179;
+  text-decoration: none; }
+html.has-touch .toggle-label:hover {
+  color: white;
+  border: .2rem solid #0C5179;
+  background-color: #0C5179;
+  text-decoration: none; }
+html.has-touch .toggle-label:active {
+  color: white;
+  border: .2rem solid #FFD213;
+  background-color: #FFD213;
+  text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
