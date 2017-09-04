@@ -289,6 +289,30 @@
           box-shadow: $card-level-shadow;
           text-align: center;
           background-color:  white;
+          position: relative;
+          #background {
+            .toggle-box {
+              display: none;
+              &:checked ~ #bkg {
+                display: block;
+              }
+            }
+            img {
+              display: none;
+              height:3rem;
+              position: absolute;
+              right: 0;
+              top: -3rem;
+              
+            }
+            label {
+              position: absolute;
+              right: 0;
+              top: 0;
+              color: white;
+              font-size: .75rem;
+            }
+          }
           p {
             text-align: center;
           }
@@ -433,8 +457,8 @@ html.no-touch {
             text-decoration: none;
           }
           &:hover {
-            color: #1277B1;
-            border-bottom: .1rem solid #1277B1;
+            color: #A4E7FF;
+            border-bottom: .1rem solid #A4E7FF;
             text-decoration: none;
           }
           &:active {

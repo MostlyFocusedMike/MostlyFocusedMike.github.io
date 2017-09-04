@@ -223,7 +223,24 @@
             background-color: white;
             box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
             text-align: center;
-            background-color: white; }
+            background-color: white;
+            position: relative; }
+            html body #wrapper #skills-section #skills-card #background .toggle-box, body body #wrapper #skills-section #skills-card #background .toggle-box {
+              display: none; }
+              html body #wrapper #skills-section #skills-card #background .toggle-box:checked ~ #bkg, body body #wrapper #skills-section #skills-card #background .toggle-box:checked ~ #bkg {
+                display: block; }
+            html body #wrapper #skills-section #skills-card #background img, body body #wrapper #skills-section #skills-card #background img {
+              display: none;
+              height: 3rem;
+              position: absolute;
+              right: 0;
+              top: -3rem; }
+            html body #wrapper #skills-section #skills-card #background label, body body #wrapper #skills-section #skills-card #background label {
+              position: absolute;
+              right: 0;
+              top: 0;
+              color: white;
+              font-size: .75rem; }
             html body #wrapper #skills-section #skills-card p, body body #wrapper #skills-section #skills-card p {
               text-align: center; }
             html body #wrapper #skills-section #skills-card .skill-icons, body body #wrapper #skills-section #skills-card .skill-icons {
@@ -309,8 +326,8 @@ html.no-touch body #header div#menu {
       border-bottom: .1rem solid white;
       text-decoration: none; }
     html.no-touch body #header div#menu a:hover {
-      color: #1277B1;
-      border-bottom: .1rem solid #1277B1;
+      color: #A4E7FF;
+      border-bottom: .1rem solid #A4E7FF;
       text-decoration: none; }
     html.no-touch body #header div#menu a:active {
       color: #FFD213;

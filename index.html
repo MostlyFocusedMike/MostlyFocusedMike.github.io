@@ -6,6 +6,7 @@
     <meta name="author" content="Mike Cronin">
     <meta name="description" content="Mike Cronin's web design portfolio">
     <title>Mostly Focused Mike</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300, 400" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
@@ -16,7 +17,7 @@
         <a href="#top"><img src="images/MF-trans-Circle.png" alt="logo" id="logo-pic"/>
         <h1 class="logo">Mostly Focused</h1></a>
         <div id="menu">
-          <a href="mailto:mostlyfocusedmike@gmail.com" class="hidden-xs">Email</a>
+          <a href="mailto:mostlyfocusedmike@gmail.com" >Email</a>
           <a href="/Michael_Cronin_Resume_2017.pdf" target="_blank">Resume</a>
         </div>      
     </header>
@@ -32,20 +33,16 @@
         </div>
       </div>
       <!-- ABOUT ME SECTION /////////////////////////-->
-      <div class="container" id="about-me-section">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-2 col-xs-12 col-xs-offset-1"><h2 class="section-title">ABOUT</h2></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 about-me-card">
-        <p id="quote"><em>"A jack of all trades but master of none...is better than a master of one."</em></p>
+      <div id="about-me-section">
+        <h2 class="section-title">ABOUT</h2>
+        <div class="about-me-card">
+          <p id="quote"><em>"A jack of all trades but master of none...is better than a master of one."</em></p>
 
-        <p><span class="tab">From singing opera to graphic design to writing cue cards at SNL, I've done a lot of things. For the past 6 months, I've been teaching myself programming and web development.</span></p>
-        <p><span class="tab">This site will show you all of my projects and, hopefully, my adaptability. I never want to do just one thing, but I'm always focused. Mostly. </span></p>
+          <p><span class="tab">From singing opera to graphic design to writing cue cards at SNL, I've done a lot of things. For the past 6 months, I've been teaching myself programming and web development.</span></p>
+          <p><span class="tab">This site will show you all of my projects and, hopefully, my adaptability. I never want to do just one thing, but I'm always focused. Mostly. </span></p>
         <div class="line"></div>
       </div>
     </div>
-  </div>
     
       <!-- PROJECTS ////////////////////////////// -->
       <div id="projects-section">
@@ -178,6 +175,11 @@
       <h2 class="section-title">SKILLS</h2>
 
         <div id="skills-card">
+          <div id="background">
+            <input id="toggle-background" class= "toggle-box" type="checkbox"/>
+            <img src="images/background.png" id="bkg"/>
+            <label class="toggle-label" for="toggle-background">Find all the Hidden Henrys in my sites!</label>
+          </div>
           <p>Here are all the languages and programs I currently use: </p>
           <div class="skill-icons">
             <img src="images/html-logo.png" class="skill-icon" alt="html logo" title="HTML is the backbone of the web."/>
@@ -195,8 +197,7 @@
           <div class="line"></div>
       </div>
     </div>
-
-     
+      
   </div><!-- end of wrapper -->
   <script src="js/script.js"></script>
     
