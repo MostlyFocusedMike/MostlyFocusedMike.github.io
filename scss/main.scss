@@ -24,6 +24,7 @@
     top: 48%;
     @extend %mar-pad-0;
     z-index: 10;
+    opacity: .3;
   }
   
   %card-size {
@@ -404,7 +405,6 @@
             border-left: 10px solid gray;
             transform: rotate(-64deg) skewX(-30deg);
             left: 2%;
-            opacity: .5;
             &:hover {opacity: .8;}
           }
           .next {
@@ -412,7 +412,6 @@
             border-right: 10px solid gray;
             transform: rotate(64deg) skewX(30deg);
             right: 2%;
-            opacity: .5;
             &:hover {opacity: .8;}
           }
         }

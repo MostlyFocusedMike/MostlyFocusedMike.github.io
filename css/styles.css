@@ -17,7 +17,8 @@
     height: 25px;
     position: absolute;
     top: 48%;
-    z-index: 10; }
+    z-index: 10;
+    opacity: .3; }
 
   html body #wrapper #projects-section .card-view .card .front, body body #wrapper #projects-section .card-view .card .front, html body #wrapper #projects-section .card-view .card .back, body body #wrapper #projects-section .card-view .card .back, html body #wrapper #projects-section .card-view, body body #wrapper #projects-section .card-view, html body #wrapper #projects-section .card-view .card, body body #wrapper #projects-section .card-view .card {
     width: 270px;
@@ -319,15 +320,13 @@
           html body #wrapper .arrows .back, body body #wrapper .arrows .back {
             border-left: 10px solid gray;
             transform: rotate(-64deg) skewX(-30deg);
-            left: 2%;
-            opacity: .5; }
+            left: 2%; }
             html body #wrapper .arrows .back:hover, body body #wrapper .arrows .back:hover {
               opacity: .8; }
           html body #wrapper .arrows .next, body body #wrapper .arrows .next {
             border-right: 10px solid gray;
             transform: rotate(64deg) skewX(30deg);
-            right: 2%;
-            opacity: .5; }
+            right: 2%; }
             html body #wrapper .arrows .next:hover, body body #wrapper .arrows .next:hover {
               opacity: .8; }
         html body #wrapper #s-1:checked ~ #track, body body #wrapper #s-1:checked ~ #track {
