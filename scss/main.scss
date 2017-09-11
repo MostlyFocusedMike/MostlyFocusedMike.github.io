@@ -3,6 +3,29 @@
   $std-border: 2px solid black;
   $card-level-shadow: 0rem .2rem .5rem rgba(0,0,0,.2);
   $header-shadow: 0rem .4rem 1.5rem rgba(0,0,0,.4);
+  
+  $slides: 7; //number of slides
+  %mar-pad-0 {
+    padding: 0;
+    margin: 0;
+  }
+  %t-l-r-b-0 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  %arrows {
+    display: inline-block;
+    border-top: 9px solid gray;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 48%;
+    @extend %mar-pad-0;
+    z-index: 10;
+  }
+  
   %card-size {
     width: 270px;
     height: 380px;
@@ -52,15 +75,6 @@
       background-color: #1277B1;
       text-decoration: none;
     }
-  }
-  %section-title {
-    display: block;
-    width: 100%;
-    margin-bottom: .25rem;
-    padding-left: 1rem;
-    font-size: 2rem;
-    color: #0C5179;
-    text-shadow: $card-level-shadow;
   }
 
   html, body {
@@ -169,27 +183,22 @@
           
         }
         #about-me-section {
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-        h2.section-title {
-          @extend %section-title;
-        }
-          
-        .about-me-card {
           width: 90%;
-          margin: 0 auto 1.2rem;
-          padding: 1rem;
-          background-color: white;
-          box-shadow: $card-level-shadow;
-          text-align: center;
-          p#quote {
-            text-align: center;
-          }
+          margin: 0 auto;
+          display: block;
 
-        }
-      }
-        
+          .about-me-card {
+            width: 90%;
+            margin: 0 auto 1.2rem;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: $card-level-shadow;
+            text-align: center;
+            p.about-info {
+              text-align: justify;
+            }
+          }
+        }    
         .toggle-box {
         display: none;
         &:checked ~ .card-view > .card {
@@ -200,9 +209,6 @@
           @extend %flexy;
           width: 95%;
           margin: 0 auto;
-          h2.section-title {
-            @extend %section-title;
-          }
           .card-view {
             @extend %card-size;
             perspective: 1000px;
@@ -277,9 +283,6 @@
         width: 90%;
         margin: 0 auto 3rem;
         display: block;
-        h2.section-title {
-          @extend %section-title;
-        }
         #skills-card {
           display: block;
           width: 90%;
@@ -328,9 +331,125 @@
           }
         }
       }
-
         
-
+        #slideshow-section {
+          width: 90%;
+          margin: 0 auto 3rem;
+          display: block;
+          #slideshow-card {
+            display: block;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: $card-level-shadow;
+            text-align: center;
+            background-color:  white;
+            position: relative;
+            #slideshow-holder {
+            width: 70%;  //CHANGE THIS TO CHANGE THE RESPONSIVE WIDTH
+            max-width: 400px;
+            margin: 1rem auto 2rem;
+            display: block;
+            #slide-show {
+              width: 100%;  //LEAVE THIS ONE ALONE THOUGH
+              padding-top: 130%; //CHANGE THIS TO CHANGE ASPECT RATIO
+              margin: 0 auto;
+              text-align: center;
+              position: relative;
+              overflow: hidden;
+              text-align: center;
+              vertical-align: bottom;
+    
+              [type="radio"] {
+                display: none;
+              }   
+              #f-buttons { //f-buttons holds the labels that look like buttons hence, fake
+                position: absolute;
+                bottom: 2%;
+                width: 100%;
+                height: 14px;
+                @extend %mar-pad-0;
+                .fake-button {
+                  position: relative;
+                  display: inline-block;
+                  border-radius: 50%;
+                  width: 14px;
+                  height: 14px;
+                  margin: 0 3px;
+                  padding: 0;
+                  z-index: 4;
+//                  background-color: gray;
+                  &:hover {background-color: #aaa;}
+                }
+              }
+              #track {
+                position: absolute;
+                @extend %t-l-r-b-0;
+                @extend %mar-pad-0;
+                transition: transform .5s ease 0s;
+              }
+            }
+          }
+          }
+        }
+        .arrows {
+          position: absolute;
+          top: 45%;
+          left: 0;
+          display: none;
+          width: 100%;
+          .back {
+            @extend %arrows;
+            border-left: 10px solid gray;
+            transform: rotate(-64deg) skewX(-30deg);
+            left: 2%;
+            opacity: .5;
+            &:hover {opacity: .8;}
+          }
+          .next {
+            @extend %arrows;
+            border-right: 10px solid gray;
+            transform: rotate(64deg) skewX(30deg);
+            right: 2%;
+            opacity: .5;
+            &:hover {opacity: .8;}
+          }
+        }
+        @for $i from 1 through $slides {
+          #s-#{$i}:checked~#track {  //moves the track itself
+            transform: translateX(percentage(-($i - 1)));
+          }
+          #s-#{$i}:checked~#f-buttons .fake-button#b-#{$i} { //highlights current slide button
+            background-color: #ccc;
+          }
+          #s-#{$i}:not(:checked)~#f-buttons .fake-button#b-#{$i} {
+            background-color: gray; // overcomes nesting issue
+          }
+          #s-#{$i}:checked~.arrows:nth-of-type(#{$i}) { //makes the correct arrows visible
+            display: block;
+          }
+          .slide:nth-of-type(#{$i}) { //styles each slide and puts it in the right spot on the track
+            @extend %mar-pad-0;
+            @extend %t-l-r-b-0;
+            background: url("../images/slideshow-photos/#{$i}.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: translateX(percentage(($i - 1)));
+          }
+        }
+        h2.section-title {
+          display: block;
+          width: 100%;
+          margin-bottom: .25rem;
+          padding-left: 1rem;
+          font-size: 2rem;
+          color: #0C5179;
+          text-shadow: $card-level-shadow;
+        }
         .line {
           width: 10rem;
           margin: 1rem auto;
@@ -339,18 +458,20 @@
         p {
           width: 90%;
           margin: 1rem auto;
-          text-align: justify;
+          text-align: center;
           font-size: 1rem;
           font-weight: 400;
           color: #334;
-            span.tab {
-              margin-left: 2em;
-            }
+          span.tab {
+            margin-left: 2em;
           }
+        }
       }
     }
   }
 }
+
+
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
@@ -435,7 +556,6 @@
     }
   }
 }
-
 
 html.no-touch {
   body {
@@ -568,4 +688,3 @@ html.no-touch {
     }
   }
 }
-
