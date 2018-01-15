@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Mike Cronin">
+        <meta name="description" content="A way for people to practice their times tables">
+        <title>Times Tables</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+    <div id="top">
+      <header>
+        <h1 id="logo"><span>Table <span class="mult">*</span> Sessions =</span> <span>a multiplication practice site</span></h1>
+      </header>
+
+      <div id="prob-msg">
+        <div id="welcome-msg">
+          <h1>Get started now,
+          or create a new session below</h1>
+        </div>
+        <div id="cct-msg">
+          <div class="msg-hold">
+            <div id="cct-circle">
+            </div>
+            <h2 id="test">Correct!</h2>
+          </div>
+        </div>
+        <div id="wng-msg">
+          <div class="msg-hold">
+            <div id="wng-circle">
+              <h1 id="x-mark">X</h1>
+            </div>
+          <h2>Sorry, it's <span id="real-ans">???</span>.</h2>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- top -->
+
+    <div id="middle">
+      <div id="score-board">
+        <p>Score: <span class="fin-score">??/??</span></p>
+      </div>
+
+      <div id="prob-div">
+        <div id="statement-holder">
+          <h2 id="statement"><span id="x-id">X</span> <span class="mult">*
+            </span> <span id="y-id">Y</span> = </h2>
+          <input type="text" id="u-ans" value="?" />
+        </div>
+        <p>Press enter to submit your answer</p>
+        <button type="submit" id="skip-button">Skip Round</button>
+      </div>
+
+      <div id="progress-bars">
+        <div id="round-holder">
+          <p>Round Progress</p>
+          <div id="round-mover">
+          </div>
+        </div>
+        <div id="session-holder">
+          <p>Session Progress</p>
+          <div id="session-mover">
+          </div>
+        </div>
+      </div>
+      
+      <div id="end-msg">
+        <h2>Session Completed!<h2>
+        <p>Your score: <span class="fin-score">??/??</span></p>
+        <p>Misses:</p>
+        <div id="mis-qs">
+        </div>
+        <button id="hide-end" type="submit">close</button>
+      </div>
+    </div>
+
+    <div id="bottom">
+      <div id="choose-num-form">
+        <fieldset id="start-num">
+          <legend>Pick your starting round</legend>
+          <label class="container">1
+						<input type="radio" name="start-round" value="1"> 
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">2
+						<input type="radio" name="start-round" value="2" checked="checked">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">3
+						<input type="radio" name="start-round" value="3">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">4
+						<input type="radio" name="start-round" value="4">
+						<span class="radio-b"></span>
+					</label>
+          <label class="container">5
+						<input type="radio" name="start-round" value="5">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">6
+						<input type="radio" name="start-round" value="6">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">7
+						<input type="radio" name="start-round" value="7">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">8
+						<input type="radio" name="start-round" value="8">
+						<span class="radio-b"></span>
+					</label>
+          <label class="container">9
+						<input type="radio" name="start-round" value="9">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">10
+						<input type="radio" name="start-round" value="10">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">11
+						<input type="radio" name="start-round" value="11">
+						<span class="radio-b"></span>
+					</label>
+					<label class="container">12
+						<input type="radio" name="start-round" value="12">
+						<span class="radio-b"></span>
+					</label>
+        </fieldset>
+        <fieldset id="include-num">
+          <legend>Check each number you'd like to appear in each round</legend>
+          <label class="container">1
+						<input type="checkbox" name="include-num" value="1">
+						<span class="check"></span>
+					</label>
+          <label class="container">2
+						<input type="checkbox" name="include-num" value="2" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">3
+						<input type="checkbox" name="include-num" value="3" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">4
+						<input type="checkbox" name="include-num" value="4" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">5
+						<input type="checkbox" name="include-num" value="5" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">6
+						<input type="checkbox" name="include-num" value="6" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">7
+						<input type="checkbox" name="include-num" value="7" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">8
+						<input type="checkbox" name="include-num" value="8" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">9
+						<input type="checkbox" name="include-num" value="9" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">10
+            <input type="checkbox" name="include-num" value="10"> 
+						<span class="check"></span>
+					</label>
+          <label class="container">11
+						<input type="checkbox" name="include-num" value="11" checked="checked">
+						<span class="check"></span>
+					</label>
+          <label class="container">12
+						<input type="checkbox" name="include-num" value="12" checked="checked">
+						<span class="check"></span>
+					</label>
+        </fieldset>
+        
+        <button type="submit" id="start-button">Start New Session</button>
+      </div>
+    </div>
+
+
+    
+    </div> <!--wrapper-->
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
+
